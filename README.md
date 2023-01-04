@@ -1,3 +1,10 @@
+## Project description
+
+Avec ce projet, nous souhaitons créer un mini-jeu, "le site dont vous êtes le héros".
+Vous faites partie de la Git Push Force, et vous allez devoir venir à bout de conflits informatiques armé de votre clavier, votre souris, et votre skill.
+Dans les fait, il s'agit d'une aventure narrative sous forme d'une app React, avec des cartes à choix multiples.
+Ces choix vous permettrons d'avancer, ou au contraire, vous mener vers une fin prématurée.
+
 ## Concept
 
 This template is meant to serve as a foundation for every P2/P3 following the React-Express-MySQL stack, as learned in Wild Code School.
