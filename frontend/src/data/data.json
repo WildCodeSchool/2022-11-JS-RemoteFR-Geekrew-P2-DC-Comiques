@@ -1,205 +1,200 @@
 {
-    "scenarioCards": [
-        {
-            "id": "sc001",
-            "imageSource": "../assets/scene_LaboFigma.png",
-            "title": "Initialisation",
-            "text": "Grâce au réducteur-reducer, vous êtes numérisé et injecté dans le code vérolé à sauver. Vous atterrissez sur la landing page mais une immense code-erreur terrifiante se dresse devant vous et vous menace. No need to panick ! Juste to react…",
-            "choices": [
-                "Vous clonez le code",
-                "Vous lui envoyez ctrl+alt+suppr dans son immense gueule dentée"
-            ],
-            "popUpText": []
-        },
-        {
-            "id": "sc002",
-            "imageSource": "../assets/scene_LaboFigma.png",
-            "title": "Code Source",
-            "text": "Vous venez de dupliquer le code sur votre machine. Beau réflexe. Vous pouvez maintenant arpenter tranquillement le code-source",
-            "choices": [
-                "Vous allez dans app.jsx",
-                "Vous allez dans style.css",
-                "Vous vous empressez d’aller voir express"
-            ],
-            "popUpText": []
-        },
-        {
-            "id": "sc003",
-            "imageSource": "../assets/scene_LaboFigma.png",
-            "title": "Jurassic Park",
-            "text": "Vous atterrissez devant un T-Regex pas possible qui vous emprisonne telle une mélasse javascriptée. Faites vite !",
-            "choices": [
-                "Vous lui faites une accolade et lui transmettez plein d’amour",
-                "Vous lui offrez un string",
-                "Vous lui bottez l’array"
-            ],
-            "popUpText": [
-                "Même si le charabia est touché par l’attention, cela ne suffit pas, il faut essayer autre chose."
-            ]
-        },
-        {
-            "id": "sc004",
-            "imageSource": "../assets/scene_LaboFigma.png",
-            "title": "The Thing",
-            "text": "Une monstrueuse variable borderline sans style de niveau 3 vous saute dessus.",
-            "choices": [
-                "Vous lui mettez 2 points dans la tronche",
-                "Vous tirez tirez"
-            ],
-            "popUpText": []
-        },
-        {
-            "id": "sc005",
-            "imageSource": "../assets/scene_LaboFigma.png",
-            "title": "Go fast",
-            "text": "Vous avez pris la voie express ! Ici des dealeurs gèrent un important traffic de code.",
-            "choices": [
-                "Vous leur collez votre plus beau end-poingt dans les API",
-                "Vous changez de route"
-            ],
-            "popUpText": []
-        },
-        {
-            "id": "sc006",
-            "imageSource": "../assets/scene_LaboFigma.png",
-            "title": "09/11/1989",
-            "text": "Devant vous il y a un tableau dont les 2 personnages animés se boudent violemment l’un l’autre. Vous discutez avec eux et apprenez qu’ils s’appellent Xavier et Lisa. Quelque chose jette un froid entre eux…",
-            "choices": [
-                "Vous leur demandez de se faire un câlin",
-                "Vous divisez le tableau en 2"
-            ],
-            "popUpText": []
-        },
-        {
-            "id": "sc007",
-            "imageSource": "../assets/scene_LaboFigma.png",
-            "title": "Timbré",
-            "text": "Vous tombez sur un facteur en panne de véhicule qui vous demande de l’aide.",
-            "choices": [
-                "Vous acceptez le POST à sa place",
-                "Vous lui répondez un truc du genre « Vous fetchiez j’ai des choses plus graves à régler »"
-            ],
-            "popUpText": []
-        },
-        {
-            "id": "sc008",
-            "imageSource": "../assets/scene_LaboFigma.png",
-            "title": "Peter Pan",
-            "text": "Vous tombez sur un capitaine hook en pleine forme ! Rempli de joie, il vous crie à la figure qu’il veut partir visiter les states et faire le tour du pays ! Puis d’un seul coup il déprime, usé jusqu’à la moelle. Eh non ! À nouveau euphorique ! Puis re déprimé… Il faut que ces sautes d’humeur permanentes cessent !",
-            "choices": [
-                "Vous l’initiez au yoga",
-                "Vous lui mettez une grande tarte dans sa gueule et lui demandez un peu de SILENCE !"
-            ],
-            "popUpText": []
-        },
-        {
-            "id": "sc011",
-            "imageSource": "../assets/scene_LaboFigma.png",
-            "title": "Get Git or Die",
-            "text": "Pour déployer votre code :",
-            "choices": [
-                "Push",
-                "Pull",
-                "Fetch",
-                "Merge"
-            ],
-            "popUpText": [
-                "Tu ne respectes pas le workflow de la Git Push Force",
-                "Bien vu ! Il faut savoir où en sont les avancées de vos collègues de la Git Push Force dans les combats sur le terrain principal !",
-                "Excellent ! Vous avez pris en compte les progrès de vos vaillant.e.s collègues et les avez intégrés à votre travail à vous."
-            ]
-        }
-    ],
-    "eventCards": [
-        {
-            "id": "game-over-1-2",
-            "imageSource": "../assets/PC-Burn.png",
-            "text": "Ça la chatouille et dans son geste elle vous broie. Vous êtes supprimé. L’appli est crashée. GAME OVER",
-            "buttonText": "Retour page d’accueil"
-        },
-        {
-            "id": "turn-back-3-3",
-            "imageSource": "../assets/scene_LaboFigma.png",
-            "text": "Votre pied s’enfonce encore plus dans la mélasse et vous vous étalez de tout votre long ! Retour case départ",
-            "buttonText": "Retour au code source"
-        },
-        {
-            "id": "turn-back-4-2",
-            "imageSource": "../assets/scene_LaboFigma.png",
-            "text": "Ça n’a aucun effet sur elle, elle vous bloque le passage et vous êtes obligé de rebrousser chemin.",
-            "buttonText": "Retour au code source"
-        },
-        {
-            "id": "game-over-5-1",
-            "imageSource": "../assets/PC-Burn.png",
-            "text": "Ils url de colère et vous ra-get toutes vos possessions. Dépouillé.e, vous ne pouvez plus rien faire et votre mission s’arrête ici. L’appli est crashée. GAME OVER",
-            "buttonText": "Retour page d’accueil"
-        },
-        {
-            "id": "transition-5-2",
-            "imageSource": "../assets/scene_LaboFigma.png",
-            "text": "Judicieuse décision, leur traffic est stable et vous ne voulez pas les déranger.",
-            "buttonText": "Suite"
-        },
-        {
-            "id": "transition-3-1",
-            "imageSource": "../assets/scene_LaboFigma.png",
-            "text": "Le charabia y est sensible ! Fini le combat, vous vous étreignez et allez à la ligne suivante",
-            "buttonText": "Suite"
-        },
-        {
-            "id": "turn-back-6-2",
-            "imageSource": "../assets/scene_LaboFigma.png",
-            "text": "Quelle erreur ! Vous venez de séparer 2 amoureux secrets ! Tout le code s’écroule et il va falloir tout refaire… Retour case départ.",
-            "buttonText": "Retour au code source"
-        },
-        {
-            "id": "game-over-7-2",
-            "imageSource": "../assets/PC-Burn.png",
-            "text": "Quelle grossièreté ! Votre mauvaise humeur ne vous amènera nulle part. Vous êtes exclu.e de la mission. GAME OVER",
-            "buttonText": "Retour page d’accueil"
-        },
-        {
-            "id": "transition-4-1",
-            "imageSource": "../assets/scene_LaboFigma.png",
-            "text": "Bravo ! La variable est domptée et prête à être votre alliée. Poursuivez votre aventure.",
-            "buttonText": "Suite"
-        },
-        {
-            "id": "transition-6-1",
-            "imageSource": "../assets/scene_LaboFigma.png",
-            "text": "Vous avez tout compris ! Vous avez eu l’oeil en voyant gravé en bas du tableau « XML » : car oui ! X aime L, Xavier est amoureux de Lisa et il s’avère qu’elle aussi mais ces 2 nigauds ne se parlent pas. Rien qu’un gros câlin ne puisse régler.",
-            "buttonText": "Suite"
-        },
-        {
-            "id": "turn-back-8-2",
-            "imageSource": "../assets/scene_LaboFigma.png",
-            "text": "Hook vous arrête et vous crash à la figure. Tout le code s’écroule et vous êtes obligé de repartir du début",
-            "buttonText": "Retour au code source"
-        },
-        {
-            "id": "transition-8-1",
-            "imageSource": "../assets/scene_LaboFigma.png",
-            "text": "Bravo ! Hook se calme et se met à l’écoute de son état intérieur. Stabilisé, il vous guide vers la suite.",
-            "buttonText": "Suite"
-        },
-        {
-            "id": "transition-10-1",
-            "imageSource": "../assets/scene_LaboFigma.png",
-            "text": "Bravo ! Vous avez stabilisé le code ! Il ne vous reste plus qu’à le déployer à la place de l’autre, toujours bloqué par la dévastatrice code-erreur.",
-            "buttonText": "Suite"
-        },
-        {
-            "id": "transition-10-2",
-            "imageSource": "../assets/scene_LaboFigma.png",
-            "text": "Bien joué, vous avez trouvé comment régler ces problèmes là, mais avez-vous bien fait le tour de TOUS les problèmes ?",
-            "buttonText": "Suite"
-        },
-        {
-            "id": "game-over-10-3",
-            "imageSource": "../assets/PC-Burn.png",
-            "text": "Malheureux.se ! Vous venez d'écraser tous vos collègues de la git push force qui se battent vaillamment contre l’abominable code-erreur ! GAME OVER",
-            "buttonText": "Retour page d’accueil"
-        }
-    ]
+  "scenarioCards": [
+    {
+      "id": "sc001",
+      "imageSource": "../assets/scene_LaboFigma.png",
+      "title": "Initialisation",
+      "text": "Grâce au réducteur-reducer, vous êtes numérisé et injecté dans le code vérolé à sauver. Vous atterrissez sur la landing page mais une immense code-erreur terrifiante se dresse devant vous et vous menace. No need to panick ! Juste to react…",
+      "choices": [
+        "Vous clonez le code",
+        "Vous lui envoyez ctrl+alt+suppr dans son immense gueule dentée"
+      ],
+      "popUpText": []
+    },
+    {
+      "id": "sc002",
+      "imageSource": "../assets/scene_LaboFigma.png",
+      "title": "Code Source",
+      "text": "Vous venez de dupliquer le code sur votre machine. Beau réflexe. Vous pouvez maintenant arpenter tranquillement le code-source",
+      "choices": [
+        "Vous allez dans app.jsx",
+        "Vous allez dans style.css",
+        "Vous vous empressez d’aller voir express"
+      ],
+      "popUpText": []
+    },
+    {
+      "id": "sc003",
+      "imageSource": "../assets/scene_LaboFigma.png",
+      "title": "Jurassic Park",
+      "text": "Vous atterrissez devant un T-Regex pas possible qui vous emprisonne telle une mélasse javascriptée. Faites vite !",
+      "choices": [
+        "Vous lui faites une accolade et lui transmettez plein d’amour",
+        "Vous lui offrez un string",
+        "Vous lui bottez l’array"
+      ],
+      "popUpText": [
+        "Même si le charabia est touché par l’attention, cela ne suffit pas, il faut essayer autre chose."
+      ]
+    },
+    {
+      "id": "sc004",
+      "imageSource": "../assets/scene_LaboFigma.png",
+      "title": "The Thing",
+      "text": "Une monstrueuse variable borderline sans style de niveau 3 vous saute dessus.",
+      "choices": [
+        "Vous lui mettez 2 points dans la tronche",
+        "Vous tirez tirez"
+      ],
+      "popUpText": []
+    },
+    {
+      "id": "sc005",
+      "imageSource": "../assets/scene_LaboFigma.png",
+      "title": "Go fast",
+      "text": "Vous avez pris la voie express ! Ici des dealeurs gèrent un important traffic de code.",
+      "choices": [
+        "Vous leur collez votre plus beau end-poingt dans les API",
+        "Vous changez de route"
+      ],
+      "popUpText": []
+    },
+    {
+      "id": "sc006",
+      "imageSource": "../assets/scene_LaboFigma.png",
+      "title": "09/11/1989",
+      "text": "Devant vous il y a un tableau dont les 2 personnages animés se boudent violemment l’un l’autre. Vous discutez avec eux et apprenez qu’ils s’appellent Xavier et Lisa. Quelque chose jette un froid entre eux…",
+      "choices": [
+        "Vous leur demandez de se faire un câlin",
+        "Vous divisez le tableau en 2"
+      ],
+      "popUpText": []
+    },
+    {
+      "id": "sc007",
+      "imageSource": "../assets/scene_LaboFigma.png",
+      "title": "Timbré",
+      "text": "Vous tombez sur un facteur en panne de véhicule qui vous demande de l’aide.",
+      "choices": [
+        "Vous acceptez le POST à sa place",
+        "Vous lui répondez un truc du genre « Vous fetchiez j’ai des choses plus graves à régler »"
+      ],
+      "popUpText": []
+    },
+    {
+      "id": "sc008",
+      "imageSource": "../assets/scene_LaboFigma.png",
+      "title": "Peter Pan",
+      "text": "Vous tombez sur un capitaine hook en pleine forme ! Rempli de joie, il vous crie à la figure qu’il veut partir visiter les states et faire le tour du pays ! Puis d’un seul coup il déprime, usé jusqu’à la moelle. Eh non ! À nouveau euphorique ! Puis re déprimé… Il faut que ces sautes d’humeur permanentes cessent !",
+      "choices": [
+        "Vous l’initiez au yoga",
+        "Vous lui mettez une grande tarte dans sa gueule et lui demandez un peu de SILENCE !"
+      ],
+      "popUpText": []
+    },
+    {
+      "id": "sc011",
+      "imageSource": "../assets/scene_LaboFigma.png",
+      "title": "Get Git or Die",
+      "text": "Pour déployer votre code :",
+      "choices": ["Push", "Pull", "Fetch", "Merge"],
+      "popUpText": [
+        "Tu ne respectes pas le workflow de la Git Push Force",
+        "Bien vu ! Il faut savoir où en sont les avancées de vos collègues de la Git Push Force dans les combats sur le terrain principal !",
+        "Excellent ! Vous avez pris en compte les progrès de vos vaillant.e.s collègues et les avez intégrés à votre travail à vous."
+      ]
+    }
+  ],
+  "eventCards": [
+    {
+      "id": "game-over-1-2",
+      "imageSource": "../assets/PC-Burn.png",
+      "text": "Ça la chatouille et dans son geste elle vous broie. Vous êtes supprimé. L’appli est crashée. GAME OVER",
+      "buttonText": "Retour page d’accueil"
+    },
+    {
+      "id": "turn-back-3-3",
+      "imageSource": "../assets/scene_LaboFigma.png",
+      "text": "Votre pied s’enfonce encore plus dans la mélasse et vous vous étalez de tout votre long ! Retour case départ",
+      "buttonText": "Retour au code source"
+    },
+    {
+      "id": "turn-back-4-2",
+      "imageSource": "../assets/scene_LaboFigma.png",
+      "text": "Ça n’a aucun effet sur elle, elle vous bloque le passage et vous êtes obligé de rebrousser chemin.",
+      "buttonText": "Retour au code source"
+    },
+    {
+      "id": "game-over-5-1",
+      "imageSource": "../assets/PC-Burn.png",
+      "text": "Ils url de colère et vous ra-get toutes vos possessions. Dépouillé.e, vous ne pouvez plus rien faire et votre mission s’arrête ici. L’appli est crashée. GAME OVER",
+      "buttonText": "Retour page d’accueil"
+    },
+    {
+      "id": "transition-5-2",
+      "imageSource": "../assets/scene_LaboFigma.png",
+      "text": "Judicieuse décision, leur traffic est stable et vous ne voulez pas les déranger.",
+      "buttonText": "Suite"
+    },
+    {
+      "id": "transition-3-1",
+      "imageSource": "../assets/scene_LaboFigma.png",
+      "text": "Le charabia y est sensible ! Fini le combat, vous vous étreignez et allez à la ligne suivante",
+      "buttonText": "Suite"
+    },
+    {
+      "id": "turn-back-6-2",
+      "imageSource": "../assets/scene_LaboFigma.png",
+      "text": "Quelle erreur ! Vous venez de séparer 2 amoureux secrets ! Tout le code s’écroule et il va falloir tout refaire… Retour case départ.",
+      "buttonText": "Retour au code source"
+    },
+    {
+      "id": "game-over-7-2",
+      "imageSource": "../assets/PC-Burn.png",
+      "text": "Quelle grossièreté ! Votre mauvaise humeur ne vous amènera nulle part. Vous êtes exclu.e de la mission. GAME OVER",
+      "buttonText": "Retour page d’accueil"
+    },
+    {
+      "id": "transition-4-1",
+      "imageSource": "../assets/scene_LaboFigma.png",
+      "text": "Bravo ! La variable est domptée et prête à être votre alliée. Poursuivez votre aventure.",
+      "buttonText": "Suite"
+    },
+    {
+      "id": "transition-6-1",
+      "imageSource": "../assets/scene_LaboFigma.png",
+      "text": "Vous avez tout compris ! Vous avez eu l’oeil en voyant gravé en bas du tableau « XML » : car oui ! X aime L, Xavier est amoureux de Lisa et il s’avère qu’elle aussi mais ces 2 nigauds ne se parlent pas. Rien qu’un gros câlin ne puisse régler.",
+      "buttonText": "Suite"
+    },
+    {
+      "id": "turn-back-8-2",
+      "imageSource": "../assets/scene_LaboFigma.png",
+      "text": "Hook vous arrête et vous crash à la figure. Tout le code s’écroule et vous êtes obligé de repartir du début",
+      "buttonText": "Retour au code source"
+    },
+    {
+      "id": "transition-8-1",
+      "imageSource": "../assets/scene_LaboFigma.png",
+      "text": "Bravo ! Hook se calme et se met à l’écoute de son état intérieur. Stabilisé, il vous guide vers la suite.",
+      "buttonText": "Suite"
+    },
+    {
+      "id": "transition-10-1",
+      "imageSource": "../assets/scene_LaboFigma.png",
+      "text": "Bravo ! Vous avez stabilisé le code ! Il ne vous reste plus qu’à le déployer à la place de l’autre, toujours bloqué par la dévastatrice code-erreur.",
+      "buttonText": "Suite"
+    },
+    {
+      "id": "transition-10-2",
+      "imageSource": "../assets/scene_LaboFigma.png",
+      "text": "Bien joué, vous avez trouvé comment régler ces problèmes là, mais avez-vous bien fait le tour de TOUS les problèmes ?",
+      "buttonText": "Suite"
+    },
+    {
+      "id": "game-over-10-3",
+      "imageSource": "../assets/PC-Burn.png",
+      "text": "Malheureux.se ! Vous venez d'écraser tous vos collègues de la git push force qui se battent vaillamment contre l’abominable code-erreur ! GAME OVER",
+      "buttonText": "Retour page d’accueil"
+    }
+  ]
 }
