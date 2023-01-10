@@ -1,0 +1,45 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  height: 3rem;
+  background-color: rgb(42, 35, 48);
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.background {
+  display: flex;
+  justify-content: center;
+  height: 94vh;
+  background-image: url("../assets/PC-Burn.png");
+  background-size: cover;
+  background-position-x: 50%;
+  background-position-y: center;
+  text-align: center;
+
+  width: 100%;
+}
+.backImage {
+  max-height: 48rem;
+}
+.footer {
+  height: 3rem;
+  background-color: black;
+  color: white;
+}
+.footerText {
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+.greyBox {
+  background-color: rgb(167, 183, 197, 0.5);
+  width: 90%;
+  height: 80%;
+  margin-top: 2rem;
+  border-radius: 25px;
+}
