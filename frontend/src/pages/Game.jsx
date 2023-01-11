@@ -3,8 +3,6 @@ import ClassicCard from "@components/ClassicCard";
 import data from "../data/data.json";
 
 function Game() {
- 
-
   return (
     <div>
       <ClassicCard
