@@ -1,7 +1,5 @@
 import "../styles/Home.module.css";
 
-function Home() {
-  return <header />;
-}
+function Home() {}
 
 export default Home;

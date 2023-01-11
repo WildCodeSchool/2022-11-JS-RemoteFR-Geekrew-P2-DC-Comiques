@@ -1,0 +1,32 @@
+.fond {
+  display: flex;
+  background-image: url("../assets/WinImg.png");
+  background-size: cover;
+  background-position-x: 50%;
+  background-position-y: center;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 10%;
+  width: 30%;
+  height: auto;
+}
+
+.text-container {
+  text-align: center;
+  background-color: grey;
+  opacity: 0.66;
+  width: 70%;
+  height: 40%;
+}
+
+.text {
+  height: 40%;
+  color: white;
+}
