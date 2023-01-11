@@ -17,9 +17,10 @@ function Game() {
   return (
     <div>
       <ClassicCard
-        imageSource={cardTest.imageSource} 
+        imageSource={cardTest.imageSource}
         title={cardTest.title}
-        text={cardTest.text} />
+        text={cardTest.text}
+      />
     </div>
   );
 }
