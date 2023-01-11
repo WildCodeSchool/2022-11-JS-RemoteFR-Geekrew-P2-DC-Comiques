@@ -5,10 +5,10 @@ import styles from "../styles/Crash.module.css";
 
 function Crash() {
   return (
-    <body className={styles.body}>
+    <div className={styles.body}>
       <Header />
       <CrashHero />
-    </body>
+    </div>
   );
 }
 
