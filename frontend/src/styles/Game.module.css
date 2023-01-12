@@ -1,7 +1,16 @@
+@font-face {
+  font-family: "OpenSans-BoldItalic";
+  src: local("OpenSans-BoldItalic"), url(../Fonts/OpenSans-BoldItalic.ttf);
+}
+
 html,
 body {
   height: 100%;
   background-color: #46204f;
+}
+
+h1 {
+  font-family: "OpenSans-BoldItalic";
 }
 
 .main {

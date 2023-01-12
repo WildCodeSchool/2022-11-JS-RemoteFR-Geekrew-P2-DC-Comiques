@@ -1,5 +1,5 @@
 import "../styles/Game.module.css";
-import ClassicCard from "@components/ClassicCard";
+import ClassicCard from "../components/ClassicCard";
 import data from "../data/data.json";
 
 function Game() {
