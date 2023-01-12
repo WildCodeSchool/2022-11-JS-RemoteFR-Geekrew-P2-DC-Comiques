@@ -2,102 +2,217 @@
   "scenarioCards": [
     {
       "id": "sc001",
-      "imageSource": "../assets/scene_LaboFigma.png",
+      "imageSource": "src/assets/scene_LaboFigma.png",
       "title": "Initialisation",
       "text": "Grâce au réducteur-reducer, vous êtes numérisé et injecté dans le code vérolé à sauver. Vous atterrissez sur la landing page mais une immense code-erreur terrifiante se dresse devant vous et vous menace. No need to panick ! Juste to react…",
-      "choices": [
-        "Vous clonez le code",
-        "Vous lui envoyez ctrl+alt+suppr dans son immense gueule dentée"
-      ],
+      "choices": {
+        "choice1": {
+          "id": "ch001",
+          "type": "scenarioCard",
+          "text": "Vous clonez le code",
+          "goTo": "sc002"
+        },
+        "choice2": {
+          "id": "ch002",
+          "type": "eventCard",
+          "text": "Vous lui envoyez ctrl+alt+suppr dans son immense gueule dentée",
+          "goTo": "game-over-1-2"
+        }
+      },
       "popUpText": []
     },
     {
       "id": "sc002",
-      "imageSource": "../assets/scene_LaboFigma.png",
+      "imageSource": "src/assets/scene_LaboFigma.png",
       "title": "Code Source",
       "text": "Vous venez de dupliquer le code sur votre machine. Beau réflexe. Vous pouvez maintenant arpenter tranquillement le code-source",
-      "choices": [
-        "Vous allez dans app.jsx",
-        "Vous allez dans style.css",
-        "Vous vous empressez d’aller voir express"
-      ],
+      "choices": {
+        "choice1": {
+          "id": "ch003",
+          "type": "scenarioCard",
+          "text": "Vous allez dans app.jsx",
+          "goTo": "sc003"
+        },
+        "choice2": {
+          "id": "ch004",
+          "type": "scenarioCard",
+          "text": "Vous allez dans style.css",
+          "goTo": "sc004"
+        },
+        "choice3": {
+          "id": "ch005",
+          "type": "scenarioCard",
+          "text": "Vous vous empressez d’aller voir express",
+          "goTo": "sc005"
+        }
+      },
       "popUpText": []
     },
     {
       "id": "sc003",
-      "imageSource": "../assets/scene_LaboFigma.png",
+      "imageSource": "src/assets/scene_LaboFigma.png",
       "title": "Jurassic Park",
       "text": "Vous atterrissez devant un T-Regex pas possible qui vous emprisonne telle une mélasse javascriptée. Faites vite !",
-      "choices": [
-        "Vous lui faites une accolade et lui transmettez plein d’amour",
-        "Vous lui offrez un string",
-        "Vous lui bottez l’array"
-      ],
+      "choices": {
+        "choice1": {
+          "id": "ch006",
+          "type": "eventCard",
+          "text": "Vous lui faites une accolade et lui transmettez plein d’amour",
+          "goTo": "transition-3-1"
+        },
+        "choice2": {
+          "id": "ch007",
+          "type": "popUp",
+          "text": "Vous lui offrez un string",
+          "popUpText": [0]
+        },
+        "choice3": {
+          "id": "ch008",
+          "type": "eventCard",
+          "text": "Vous lui bottez l’array",
+          "goTo": "turn-back-3-3"
+        }
+      },
       "popUpText": [
         "Même si le charabia est touché par l’attention, cela ne suffit pas, il faut essayer autre chose."
       ]
     },
     {
       "id": "sc004",
-      "imageSource": "../assets/scene_LaboFigma.png",
+      "imageSource": "src/assets/scene_LaboFigma.png",
       "title": "The Thing",
       "text": "Une monstrueuse variable borderline sans style de niveau 3 vous saute dessus.",
-      "choices": [
-        "Vous lui mettez 2 points dans la tronche",
-        "Vous tirez tirez"
-      ],
+      "choices": {
+        "choice1": {
+          "id": "ch009",
+          "type": "eventCard",
+          "text": "Vous lui mettez 2 points dans la tronche",
+          "goTo": "transition-4-1"
+        },
+        "choice2": {
+          "id": "ch010",
+          "type": "eventCard",
+          "text": "Vous tirez tirez",
+          "goTo": "turn-back-4-2"
+        }
+      },
       "popUpText": []
     },
     {
       "id": "sc005",
-      "imageSource": "../assets/scene_LaboFigma.png",
+      "imageSource": "src/assets/scene_LaboFigma.png",
       "title": "Go fast",
       "text": "Vous avez pris la voie express ! Ici des dealeurs gèrent un important traffic de code.",
-      "choices": [
-        "Vous leur collez votre plus beau end-poingt dans les API",
-        "Vous changez de route"
-      ],
+      "choices": {
+        "choice1": {
+          "id": "ch011",
+          "type": "eventCard",
+          "text": "Vous leur collez votre plus beau end-poingt dans les API",
+          "goTo": "game-over-5-1"
+        },
+        "choice2": {
+          "id": "ch012",
+          "type": "eventCard",
+          "text": "Vous changez de route",
+          "goTo": "transition-5-2"
+        }
+      },
       "popUpText": []
     },
     {
       "id": "sc006",
-      "imageSource": "../assets/scene_LaboFigma.png",
+      "imageSource": "src/assets/scene_LaboFigma.png",
       "title": "09/11/1989",
       "text": "Devant vous il y a un tableau dont les 2 personnages animés se boudent violemment l’un l’autre. Vous discutez avec eux et apprenez qu’ils s’appellent Xavier et Lisa. Quelque chose jette un froid entre eux…",
-      "choices": [
-        "Vous leur demandez de se faire un câlin",
-        "Vous divisez le tableau en 2"
-      ],
+      "choices": {
+        "choice1": {
+          "id": "ch013",
+          "type": "eventCard",
+          "text": "Vous leur demandez de se faire un câlin",
+          "goTo": "transition-6-1"
+        },
+        "choice2": {
+          "id": "ch014",
+          "type": "eventCard",
+          "text": "Vous divisez le tableau en 2",
+          "goTo": "turn-back-6-2"
+        }
+      },
       "popUpText": []
     },
     {
       "id": "sc007",
-      "imageSource": "../assets/scene_LaboFigma.png",
+      "imageSource": "src/assets/scene_LaboFigma.png",
       "title": "Timbré",
       "text": "Vous tombez sur un facteur en panne de véhicule qui vous demande de l’aide.",
-      "choices": [
-        "Vous acceptez le POST à sa place",
-        "Vous lui répondez un truc du genre « Vous fetchiez j’ai des choses plus graves à régler »"
-      ],
+      "choices": {
+        "choice1": {
+          "id": "ch015",
+          "type": "scenarioCard",
+          "text": "Vous acceptez le POST à sa place",
+          "goTo": "sc010"
+        },
+        "choice2": {
+          "id": "ch016",
+          "type": "eventCard",
+          "text": "Vous lui répondez un truc du genre « Vous fetchiez j’ai des choses plus graves à régler »",
+          "goTo": "game-over-7-2"
+        }
+      },
       "popUpText": []
     },
     {
       "id": "sc008",
-      "imageSource": "../assets/scene_LaboFigma.png",
+      "imageSource": "src/assets/scene_LaboFigma.png",
       "title": "Peter Pan",
       "text": "Vous tombez sur un capitaine hook en pleine forme ! Rempli de joie, il vous crie à la figure qu’il veut partir visiter les states et faire le tour du pays ! Puis d’un seul coup il déprime, usé jusqu’à la moelle. Eh non ! À nouveau euphorique ! Puis re déprimé… Il faut que ces sautes d’humeur permanentes cessent !",
-      "choices": [
-        "Vous l’initiez au yoga",
-        "Vous lui mettez une grande tarte dans sa gueule et lui demandez un peu de SILENCE !"
-      ],
+      "choices": {
+        "choice1": {
+          "id": "ch017",
+          "type": "eventCard",
+          "text": "Vous l’initiez au yoga",
+          "goTo": "transition-8-1"
+        },
+        "choice2": {
+          "id": "ch018",
+          "type": "eventCard",
+          "text": "Vous lui mettez une grande tarte dans sa gueule et lui demandez un peu de SILENCE !",
+          "goTo": "turn-back-8-2"
+        }
+      },
       "popUpText": []
     },
     {
       "id": "sc011",
-      "imageSource": "../assets/scene_LaboFigma.png",
+      "imageSource": "src/assets/scene_LaboFigma.png",
       "title": "Get Git or Die",
       "text": "Pour déployer votre code :",
-      "choices": ["Push", "Pull", "Fetch", "Merge"],
+      "choices": {
+        "choice1": {
+          "id": "ch017",
+          "type": "popUp",
+          "text": "Push",
+          "popUpText": [0]
+        },
+        "choice2": {
+          "id": "ch018",
+          "type": "popUp",
+          "text": "Pull",
+          "popUpText": [1]
+        },
+        "choic3": {
+          "id": "ch017",
+          "type": "popUp",
+          "text": "Fetch",
+          "popUpText": [2]
+        },
+        "choice4": {
+          "id": "ch018",
+          "type": "popUp",
+          "text": "Merge",
+          "popUpText": [3]
+        }
+      },
       "popUpText": [
         "Tu ne respectes pas le workflow de la Git Push Force",
         "Bien vu ! Il faut savoir où en sont les avancées de vos collègues de la Git Push Force dans les combats sur le terrain principal !",

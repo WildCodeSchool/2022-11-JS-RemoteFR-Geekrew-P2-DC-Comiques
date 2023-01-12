@@ -3,7 +3,6 @@ import Home from "@pages/Home";
 import Game from "@pages/Game";
 import Win from "@pages/Win";
 import Crash from "@pages/Crash";
-import "./styles/App.css";
 
 function App() {
   return (
