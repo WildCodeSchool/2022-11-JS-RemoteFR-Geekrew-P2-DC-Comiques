@@ -1,4 +1,4 @@
-button{
+button {
   border: none;
   margin: 0;
   padding: 0;
@@ -7,11 +7,9 @@ button{
   background: transparent;
 }
 
-
 .ImgLogo {
   width: 75px;
   height: 50px;
-  
 }
 .popupBtn {
   position: fixed;
@@ -20,7 +18,7 @@ button{
   transform: translate(10%, 10%);
   /* z-index: +1; */
   padding: 5px 5px;
-  
+
   border-radius: 25px;
   cursor: pointer;
 }

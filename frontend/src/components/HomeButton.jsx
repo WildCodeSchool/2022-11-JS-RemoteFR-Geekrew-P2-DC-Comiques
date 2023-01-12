@@ -19,7 +19,12 @@ function HomeButton({ buttonChoices, handleChange }) {
 
   return (
     <div className={styles["button-container"]}>
-      <button type="button" onClick={buttonChange} id={buttonChoices.id}>
+      <button
+        type="button"
+        onClick={buttonChange}
+        id={buttonChoices.id}
+        className={styles.button}
+      >
         {/* <Link to={buttonChoices.id === 1 ? "/game" : ""}>
           
         </Link> */}

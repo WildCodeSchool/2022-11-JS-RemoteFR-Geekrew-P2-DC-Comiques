@@ -22,7 +22,6 @@ function Popup({ open, onClose }) {
             </p>
           </div>
           <div className={styles.btnContainer}>
-           
             <button type="button" className={styles.btnExit} onClick={onClose}>
               <span>revenir au jeu</span>
             </button>
