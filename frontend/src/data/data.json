@@ -2,7 +2,7 @@
   "scenarioCards": [
     {
       "id": "sc001",
-      "imageSource": "../assets/scene_LaboFigma.png",
+      "imageSource": "src/assets/scene_LaboFigma.png",
       "title": "Initialisation",
       "text": "Grâce au réducteur-reducer, vous êtes numérisé et injecté dans le code vérolé à sauver. Vous atterrissez sur la landing page mais une immense code-erreur terrifiante se dresse devant vous et vous menace. No need to panick ! Juste to react…",
       "choices": [
@@ -13,7 +13,7 @@
     },
     {
       "id": "sc002",
-      "imageSource": "../assets/scene_LaboFigma.png",
+      "imageSource": "src/assets/scene_LaboFigma.png",
       "title": "Code Source",
       "text": "Vous venez de dupliquer le code sur votre machine. Beau réflexe. Vous pouvez maintenant arpenter tranquillement le code-source",
       "choices": [
@@ -25,7 +25,7 @@
     },
     {
       "id": "sc003",
-      "imageSource": "../assets/scene_LaboFigma.png",
+      "imageSource": "src/assets/scene_LaboFigma.png",
       "title": "Jurassic Park",
       "text": "Vous atterrissez devant un T-Regex pas possible qui vous emprisonne telle une mélasse javascriptée. Faites vite !",
       "choices": [
@@ -39,7 +39,7 @@
     },
     {
       "id": "sc004",
-      "imageSource": "../assets/scene_LaboFigma.png",
+      "imageSource": "src/assets/scene_LaboFigma.png",
       "title": "The Thing",
       "text": "Une monstrueuse variable borderline sans style de niveau 3 vous saute dessus.",
       "choices": [
@@ -50,7 +50,7 @@
     },
     {
       "id": "sc005",
-      "imageSource": "../assets/scene_LaboFigma.png",
+      "imageSource": "src/assets/scene_LaboFigma.png",
       "title": "Go fast",
       "text": "Vous avez pris la voie express ! Ici des dealeurs gèrent un important traffic de code.",
       "choices": [
@@ -61,7 +61,7 @@
     },
     {
       "id": "sc006",
-      "imageSource": "../assets/scene_LaboFigma.png",
+      "imageSource": "src/assets/scene_LaboFigma.png",
       "title": "09/11/1989",
       "text": "Devant vous il y a un tableau dont les 2 personnages animés se boudent violemment l’un l’autre. Vous discutez avec eux et apprenez qu’ils s’appellent Xavier et Lisa. Quelque chose jette un froid entre eux…",
       "choices": [
@@ -72,7 +72,7 @@
     },
     {
       "id": "sc007",
-      "imageSource": "../assets/scene_LaboFigma.png",
+      "imageSource": "src/assets/scene_LaboFigma.png",
       "title": "Timbré",
       "text": "Vous tombez sur un facteur en panne de véhicule qui vous demande de l’aide.",
       "choices": [
@@ -83,7 +83,7 @@
     },
     {
       "id": "sc008",
-      "imageSource": "../assets/scene_LaboFigma.png",
+      "imageSource": "src/assets/scene_LaboFigma.png",
       "title": "Peter Pan",
       "text": "Vous tombez sur un capitaine hook en pleine forme ! Rempli de joie, il vous crie à la figure qu’il veut partir visiter les states et faire le tour du pays ! Puis d’un seul coup il déprime, usé jusqu’à la moelle. Eh non ! À nouveau euphorique ! Puis re déprimé… Il faut que ces sautes d’humeur permanentes cessent !",
       "choices": [
@@ -94,7 +94,7 @@
     },
     {
       "id": "sc011",
-      "imageSource": "../assets/scene_LaboFigma.png",
+      "imageSource": "src/assets/scene_LaboFigma.png",
       "title": "Get Git or Die",
       "text": "Pour déployer votre code :",
       "choices": ["Push", "Pull", "Fetch", "Merge"],
