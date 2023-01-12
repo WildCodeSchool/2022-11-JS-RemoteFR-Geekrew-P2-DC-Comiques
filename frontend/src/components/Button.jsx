@@ -1,16 +1,16 @@
 import PropTypes from "prop-types";
 import styles from "../styles/Button.module.css";
 
-function Button({ content }) {
+function Button({ choice }) {
   return (
     <button type="button" className={styles.button}>
-      {content}
+      {choice}
     </button>
   );
 }
 
 Button.propTypes = {
-  content: PropTypes.string.isRequired,
+  choice: PropTypes.string.isRequired,
 };
 
 export default Button;
