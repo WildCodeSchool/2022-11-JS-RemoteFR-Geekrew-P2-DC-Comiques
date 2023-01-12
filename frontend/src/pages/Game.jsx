@@ -1,6 +1,8 @@
 import "../styles/Game.module.css";
 import ClassicCard from "@components/ClassicCard";
 
+import Logo from "../components/Logo";
+
 function Game() {
   const cardTest = {
     id: "sc001",
@@ -16,6 +18,7 @@ function Game() {
 
   return (
     <div>
+      <Logo />
       <ClassicCard
         imageSource={cardTest.imageSource}
         title={cardTest.title}

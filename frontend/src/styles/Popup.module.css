@@ -1,0 +1,108 @@
+button{
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    background: transparent;
+}
+
+
+.overlay {
+  /* background-color:rgba(0, 0 , 0, 1); */
+  background-image: url("../assets/droneInterception.png");
+  background-size: cover;
+  position: fixed;
+  background-position-x: 50%;
+  background-position-y: center;
+  width: 100%;
+  height: 100%;
+}
+.popupContainer {
+    
+  max-width: 600px;
+  width: 100%;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.75);
+}
+
+
+
+.closeBtn {
+  position: fixed;
+  top: 2px;
+  right: 8px;
+  
+ 
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2rem;
+  padding: 0.5rem 2rem;  
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 900;
+  
+}
+
+
+.btnContainer {
+  display: flex;
+  flex-direction: column;
+ margin-right:10%;
+  padding: 1rem 1rem;
+}
+
+.btnContainer button {
+  width: 100%;
+  margin: 1rem;
+  padding: 16px 0;
+  border: none;
+  color: #ffffff;
+}
+a{
+    width:100%;   
+}
+span{
+    color:black;
+    font-size: large;
+    font-weight: 900;
+}
+.croix{
+    font-size: 2rem;
+    font-weight: 900 ;
+    
+}
+.btnExit {
+    
+        background-color: #09f1d1;
+        border-radius: 25px;
+        border: none;
+        box-shadow: 3px 2px 5px rgb(115, 114, 114);
+        width: 170px;
+        height: 70px;
+       
+     
+}
+
+.bold {
+  font-weight: 600;
+}
+
+img {
+  width: 50%;
+  object-fit: cover;
+}
