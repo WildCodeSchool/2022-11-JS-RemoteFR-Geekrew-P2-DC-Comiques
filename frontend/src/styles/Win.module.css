@@ -1,5 +1,6 @@
 .fond {
   display: flex;
+  flex-direction: column;
   background-image: url("../assets/WinImg.png");
   background-size: cover;
   background-position-x: 50%;
@@ -11,8 +12,7 @@
 
 .logo {
   display: flex;
-  position: absolute;
-  text-align: center;
+  position: fixed;
   width: 50%;
   height: auto;
   top: 1%;
@@ -32,6 +32,17 @@
 .text {
   height: 40%;
   color: white;
+}
+
+.btnExit {
+  background-color: #09f1d1;
+  border-radius: 25px;
+  border: none;
+  box-shadow: 3px 2px 5px rgb(115, 114, 114);
+  width: 170px;
+  height: 70px;
+  margin-top: 2rem;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {

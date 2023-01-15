@@ -12,14 +12,14 @@
 }
 .background {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  height: 94vh;
+  height: 100vh;
   background-image: url("../assets/PC-Burn.png");
   background-size: cover;
   background-position-x: 50%;
   background-position-y: center;
   text-align: center;
-
   width: 100%;
 }
 .backImage {
@@ -37,11 +37,23 @@
 }
 
 .greyBox {
-  background-color: rgb(167, 183, 197, 0.5);
-  width: 90%;
-  height: 80%;
+  background-color: rgb(175, 166, 177, 0.7);
+  width: 60%;
+  height: 50%;
   margin-top: 2rem;
   border-radius: 25px;
-  padding: 100px 100px 100px 100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 20px 20px 20px;
   text-align: left;
+}
+.btnExit {
+  background-color: #09f1d1;
+  border-radius: 25px;
+  border: none;
+  box-shadow: 3px 2px 5px rgb(115, 114, 114);
+  width: 170px;
+  height: 70px;
+  margin-top: 2rem;
+  cursor :pointer;
 }

@@ -98,4 +98,5 @@ button {
   box-shadow: 3px 2px 5px rgb(115, 114, 114);
   width: 170px;
   height: 70px;
+  cursor: pointer;
 }
