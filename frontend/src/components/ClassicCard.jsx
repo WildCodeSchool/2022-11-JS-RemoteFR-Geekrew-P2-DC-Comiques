@@ -9,8 +9,8 @@ function ClassicCard({ imageSource, title, text, choices }) {
       <h1>{title}</h1>
       <p>{text}</p>
       <div className={styles.choice}>
-        <Button choice={choices.choice1.text} />
-        <Button choice={choices.choice2.text} />
+        <Button choice={choices[0]} />
+        <Button choice={choices[0]} />
       </div>
     </div>
   );

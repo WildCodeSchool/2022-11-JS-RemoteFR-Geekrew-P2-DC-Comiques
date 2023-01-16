@@ -4,7 +4,7 @@ import styles from "../styles/Button.module.css";
 function Button({ choice }) {
   return (
     <button type="button" className={styles.button}>
-      {choice}
+      {choice.text}
     </button>
   );
 }
