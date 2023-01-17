@@ -6,17 +6,20 @@ import data from "../data/data.json";
 import Logo from "../components/Logo";
 
 function Game() {
-  const [content, setContent] = useState(data.scenarioCards[0]);
+  const [selectedCard, setSelectedCard] = useState(
+    data.scenarioCards.find((obj) => obj.id === "sc001")
+  );
+
   return (
     <div>
       <Logo />
-
       <ClassicCard
-        setContent={setContent}
-        imageSource={content.imageSource}
-        title={content.title}
-        text={content.text}
-        choices={content.choices}
+        setSelectedCard={setSelectedCard}
+        id={selectedCard.id}
+        imageSource={selectedCard.imageSource}
+        title={selectedCard.title}
+        text={selectedCard.text}
+        choices={selectedCard.choices}
       />
     </div>
   );
