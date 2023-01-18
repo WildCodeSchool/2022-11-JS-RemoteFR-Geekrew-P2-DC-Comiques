@@ -5,7 +5,8 @@ import styles from "../styles/Crash.module.css";
 import data from "../data/data.json";
 
 function CrashHero({
-  setSelectedCard,
+  setScenario,
+  setEvent,
   setType,
   id,
   text,
@@ -14,21 +15,29 @@ function CrashHero({
   type,
 }) {
   const navigate = useNavigate();
-  const direction = (pathTo, buttonType) => {
-    if (buttonType === "game over") {
+  const direction = (pathTo, eventType) => {
+    if (eventType === "game over") {
       navigate(`/`);
     }
-    if (buttonType === "turn back") {
-      const newSelectedCard = data.scenarioCards.find(
-        (obj) => obj.id === "sc002"
-      );
-      setSelectedCard(newSelectedCard);
+    if (eventType === "turn back") {
+      const newScenario = data.scenarioCards.find((obj) => obj.id === "sc002");
+      setScenario(newScenario);
       setType("scenarioCard");
     }
-    if (buttonType === "transition") {
-      const newSelectedCard = data.eventCards.find((obj) => obj.id === pathTo);
-      setSelectedCard(newSelectedCard);
-      setType("scenarioCard");
+    if (eventType === "transition") {
+      if (pathTo.charAt(0) === "e") {
+        const newEventCard = data.eventCards.find((obj) => obj.id === pathTo);
+        setEvent(newEventCard);
+        setType("eventCard");
+      }
+      if (pathTo.charAt(0) === "s") {
+        const newScenario = data.scenarioCards.find((obj) => obj.id === pathTo);
+        setScenario(newScenario);
+        setType("scenarioCard");
+      }
+      if (pathTo.charAt(0) === "H") {
+        navigate(`/`);
+      }
     }
   };
 
@@ -52,7 +61,8 @@ function CrashHero({
 }
 
 CrashHero.propTypes = {
-  setSelectedCard: PropTypes.func.isRequired,
+  setScenario: PropTypes.func.isRequired,
+  setEvent: PropTypes.func.isRequired,
   setType: PropTypes.func.isRequired,
   id: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,

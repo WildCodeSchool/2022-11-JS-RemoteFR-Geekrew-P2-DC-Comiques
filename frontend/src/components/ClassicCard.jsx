@@ -4,7 +4,7 @@ import styles from "../styles/Game.module.css";
 
 function ClassicCard({
   setEvent,
-  setSelectedCard,
+  setScenario,
   setType,
   imageSource,
   title,
@@ -13,8 +13,8 @@ function ClassicCard({
 }) {
   const direction = (goTo, type) => {
     if (type === "scenarioCard") {
-      const newSelectedCard = data.scenarioCards.find((obj) => obj.id === goTo);
-      setSelectedCard(newSelectedCard);
+      const newScenario = data.scenarioCards.find((obj) => obj.id === goTo);
+      setScenario(newScenario);
     }
     if (type === "eventCard") {
       const newEvent = data.eventCards.find((obj) => obj.id === goTo);
@@ -45,7 +45,7 @@ function ClassicCard({
 }
 
 ClassicCard.propTypes = {
-  setSelectedCard: PropTypes.func.isRequired,
+  setScenario: PropTypes.func.isRequired,
   setEvent: PropTypes.func.isRequired,
   setType: PropTypes.func.isRequired,
   imageSource: PropTypes.string.isRequired,

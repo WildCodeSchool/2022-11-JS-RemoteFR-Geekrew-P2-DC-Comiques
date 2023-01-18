@@ -87,13 +87,13 @@
           "id": "ch009",
           "type": "eventCard",
           "text": "Vous lui mettez 2 points dans la tronche",
-          "goTo": "ec009"
+          "goTo": "ec003"
         },
         {
           "id": "ch010",
           "type": "eventCard",
           "text": "Vous tirez tirez",
-          "goTo": "ec003"
+          "goTo": "ec009"
         }
       ],
       "popUpText": []
@@ -148,9 +148,9 @@
       "choices": [
         {
           "id": "ch015",
-          "type": "scenarioCard",
+          "type": "eventCard",
           "text": "Vous acceptez le POST à sa place",
-          "goTo": "sc010"
+          "goTo": "ec013"
         },
         {
           "id": "ch016",
@@ -227,11 +227,8 @@
       "from": "1-2",
       "imageSource": "../assets/PC-Burn.png",
       "text": "Ça la chatouille et dans son geste elle vous broie. Vous êtes supprimé. L’appli est crashée. GAME OVER",
-      "button": {
-        "buttonText": "Retour page d’accueil",
-        "goToType": "",
-        "goTo": "Home"
-      }
+      "buttonText": "Retour page d’accueil",
+      "goTo": "Home"
     },
     {
       "id": "ec002",
@@ -245,7 +242,7 @@
     {
       "id": "ec003",
       "type": "turn back",
-      "from": "4-2",
+      "from": "4-1",
       "imageSource": "../assets/scene_LaboFigma.png",
       "text": "Ça n’a aucun effet sur elle, elle vous bloque le passage et vous êtes obligé de rebrousser chemin.",
       "buttonText": "Retour au code source",
@@ -299,11 +296,11 @@
     {
       "id": "ec009",
       "type": "transition",
-      "from": "4-1",
+      "from": "4-2",
       "imageSource": "../assets/scene_LaboFigma.png",
       "text": "Bravo ! La variable est domptée et prête à être votre alliée. Poursuivez votre aventure.",
       "buttonText": "Suite",
-      "goTo": "sc010"
+      "goTo": "ec013"
     },
     {
       "id": "ec010",

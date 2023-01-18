@@ -3,11 +3,10 @@ import { useState } from "react";
 import ClassicCard from "../components/ClassicCard";
 import CrashHero from "../components/CrashHero";
 import data from "../data/data.json";
-
 import Logo from "../components/Logo";
 
 function Game() {
-  const [selectedCard, setSelectedCard] = useState(
+  const [scenario, setScenario] = useState(
     data.scenarioCards.find((obj) => obj.id === "sc001")
   );
 
@@ -22,19 +21,19 @@ function Game() {
       <Logo />
       {type === "scenarioCard" && (
         <ClassicCard
-          setSelectedCard={setSelectedCard}
+          setScenario={setScenario}
           setEvent={setEvent}
           setType={setType}
-          id={selectedCard.id}
-          imageSource={selectedCard.imageSource}
-          title={selectedCard.title}
-          text={selectedCard.text}
-          choices={selectedCard.choices}
+          id={scenario.id}
+          imageSource={scenario.imageSource}
+          title={scenario.title}
+          text={scenario.text}
+          choices={scenario.choices}
         />
       )}
       {type === "eventCard" && (
         <CrashHero
-          setSelectedCard={setSelectedCard}
+          setScenario={setScenario}
           setEvent={setEvent}
           setType={setType}
           id={event.id}
