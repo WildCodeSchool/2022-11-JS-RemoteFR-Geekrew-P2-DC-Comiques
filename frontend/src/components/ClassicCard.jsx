@@ -2,10 +2,25 @@ import PropTypes from "prop-types";
 import data from "../data/data.json";
 import styles from "../styles/Game.module.css";
 
-function ClassicCard({ setSelectedCard, imageSource, title, text, choices }) {
-  const direction = (goTo) => {
-    const newSelectedCard = data.scenarioCards.find((obj) => obj.id === goTo);
-    setSelectedCard(newSelectedCard);
+function ClassicCard({
+  setEvent,
+  setSelectedCard,
+  setType,
+  imageSource,
+  title,
+  text,
+  choices,
+}) {
+  const direction = (goTo, type) => {
+    if (type === "scenarioCard") {
+      const newSelectedCard = data.scenarioCards.find((obj) => obj.id === goTo);
+      setSelectedCard(newSelectedCard);
+    }
+    if (type === "eventCard") {
+      const newEvent = data.eventCards.find((obj) => obj.id === goTo);
+      setEvent(newEvent);
+    }
+    setType(type);
   };
 
   return (
@@ -19,7 +34,7 @@ function ClassicCard({ setSelectedCard, imageSource, title, text, choices }) {
             className={styles.button}
             type="button"
             key={choice.goTo}
-            onClick={() => direction(choice.goTo)}
+            onClick={() => direction(choice.goTo, choice.type)}
           >
             {choice.text}
           </button>
@@ -31,6 +46,8 @@ function ClassicCard({ setSelectedCard, imageSource, title, text, choices }) {
 
 ClassicCard.propTypes = {
   setSelectedCard: PropTypes.func.isRequired,
+  setEvent: PropTypes.func.isRequired,
+  setType: PropTypes.func.isRequired,
   imageSource: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,

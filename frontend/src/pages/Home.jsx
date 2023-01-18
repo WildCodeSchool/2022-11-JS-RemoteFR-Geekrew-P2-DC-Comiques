@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
-import HomeButton from "@components/HomeButton";
-import Footer from "@components/Footer";
-import HomeText from "@components/HomeText";
+import HomeButton from "../components/HomeButton";
+import Footer from "../components/Footer";
+import HomeText from "../components/HomeText";
 
 import data from "../data/homecredits.json";
 
