@@ -64,7 +64,7 @@
           "id": "ch007",
           "type": "popUp",
           "text": "Vous lui offrez un string",
-          "popUpText": [0]
+          "popUpText": 0
         },
         {
           "id": "ch008",
@@ -192,29 +192,30 @@
           "id": "ch017",
           "type": "popUp",
           "text": "Push",
-          "popUpText": [0]
+          "popUpText": 0
         },
         {
           "id": "ch018",
           "type": "popUp",
           "text": "Pull",
-          "popUpText": [1]
+          "popUpText": 1
         },
         {
           "id": "ch017",
           "type": "popUp",
           "text": "Fetch",
-          "popUpText": [2]
+          "popUpText": 2
         },
         {
           "id": "ch018",
           "type": "popUp",
           "text": "Merge",
-          "popUpText": [3]
+          "popUpText": 3
         }
       ],
       "popUpText": [
         "Tu ne respectes pas le workflow de la Git Push Force",
+        "Excellent ! Vous avez récupéré le travail accompli en parallèle de votre mission par vos vaillant.e.s collègues de la git push force ! Vous êtes désormais serein pour la suite de vos actions.",
         "Bien vu ! Il faut savoir où en sont les avancées de vos collègues de la Git Push Force dans les combats sur le terrain principal !",
         "Excellent ! Vous avez pris en compte les progrès de vos vaillant.e.s collègues et les avez intégrés à votre travail à vous."
       ]

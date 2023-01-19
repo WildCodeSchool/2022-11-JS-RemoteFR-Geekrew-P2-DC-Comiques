@@ -10,6 +10,8 @@ function ClassicCard({
   title,
   text,
   choices,
+  visibility,
+  setVisibility,
 }) {
   const direction = (goTo, type) => {
     if (type === "scenarioCard") {
@@ -23,6 +25,10 @@ function ClassicCard({
     setType(type);
   };
 
+  const triggerPopup = () => {
+    setVisibility(!visibility);
+  };
+
   return (
     <div className={styles.main}>
       <img src={imageSource} className={styles.img} alt="Labo" />
@@ -34,7 +40,17 @@ function ClassicCard({
             className={styles.button}
             type="button"
             key={choice.goTo}
-            onClick={() => direction(choice.goTo, choice.type)}
+            onClick={() => {
+              if (choice.type === "popUp") {
+                triggerPopup();
+              }
+              if (
+                choice.type === "eventCard" ||
+                choice.type === "scenarioCard"
+              ) {
+                direction(choice.goTo, choice.type);
+              }
+            }}
           >
             {choice.text}
           </button>
@@ -51,6 +67,8 @@ ClassicCard.propTypes = {
   imageSource: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
+  visibility: PropTypes.bool.isRequired,
+  setVisibility: PropTypes.func.isRequired,
   choices: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
