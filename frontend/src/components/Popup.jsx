@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 import styles from "../styles/Popup.module.css";
 
-// eslint-disable-next-line react/prop-types
 function Popup({ open, onClose }) {
   if (!open) return null;
 
@@ -40,6 +39,7 @@ function Popup({ open, onClose }) {
 
 Popup.propTypes = {
   open: PropTypes.bool.isRequired,
+  onClose: PropTypes.func.isRequired,
 };
 
 export default Popup;
