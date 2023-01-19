@@ -1,7 +1,16 @@
+@font-face {
+  font-family: "OpenSans-BoldItalic";
+  src: local("OpenSans-BoldItalic"), url(../Fonts/OpenSans-BoldItalic.ttf);
+}
+
 html,
 body {
   height: 100%;
   background-color: #46204f;
+}
+
+h1 {
+  font-family: "OpenSans-BoldItalic";
 }
 
 .main {
@@ -24,4 +33,14 @@ body {
 .img {
   width: 100%;
   border-radius: 25px;
+}
+
+.button {
+  background-color: #09f1d1;
+  border-radius: 25px;
+  border: none;
+  box-shadow: 3px 2px 5px rgb(115, 114, 114);
+  width: 170px;
+  height: 70px;
+  cursor: pointer;
 }

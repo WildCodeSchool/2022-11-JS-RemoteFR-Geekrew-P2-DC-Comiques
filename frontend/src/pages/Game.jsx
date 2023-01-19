@@ -1,26 +1,49 @@
 import "../styles/Game.module.css";
-import ClassicCard from "@components/ClassicCard";
+import { useState } from "react";
+import ClassicCard from "../components/ClassicCard";
+import CrashHero from "../components/CrashHero";
+import data from "../data/data.json";
+import Logo from "../components/Logo";
 
 function Game() {
-  const cardTest = {
-    id: "sc001",
-    imageSource: "src/assets/scene_LaboFigma.png",
-    title: "Initialisation",
-    text: "Grâce au réducteur-reducer, vous êtes numérisé et injecté dans le code vérolé à sauver. Vous atterrissez sur la landing page mais une immense code-erreur terrifiante se dresse devant vous et vous menace. No need to panick ! Juste to react…",
-    choices: [
-      "Vous clonez le code",
-      "Vous lui envoyez ctrl+alt+suppr dans son immense gueule dentée",
-    ],
-    popUpText: [],
-  };
+  const [scenario, setScenario] = useState(
+    data.scenarioCards.find((obj) => obj.id === "sc001")
+  );
+
+  const [event, setEvent] = useState(
+    data.eventCards.find((card) => card.id === "ec001")
+  );
+
+  const [type, setType] = useState("scenarioCard");
 
   return (
     <div>
-      <ClassicCard
-        imageSource={cardTest.imageSource}
-        title={cardTest.title}
-        text={cardTest.text}
-      />
+      <Logo />
+      {type === "scenarioCard" && (
+        <ClassicCard
+          setScenario={setScenario}
+          setEvent={setEvent}
+          setType={setType}
+          id={scenario.id}
+          imageSource={scenario.imageSource}
+          title={scenario.title}
+          text={scenario.text}
+          choices={scenario.choices}
+        />
+      )}
+      {type === "eventCard" && (
+        <CrashHero
+          setScenario={setScenario}
+          setEvent={setEvent}
+          setType={setType}
+          id={event.id}
+          imageSource={event.imageSource}
+          text={event.text}
+          buttonText={event.buttonText}
+          goTo={event.goTo}
+          type={event.type}
+        />
+      )}
     </div>
   );
 }

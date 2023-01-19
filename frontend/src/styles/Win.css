@@ -35,10 +35,11 @@
 }
 
 @media (min-width: 768px) {
+
   .logo {
-    top: 0;
-    left: 10%;
-    width: 30%;
-    height: auto;
-  }
+  top: 0;
+  left: 10%;
+  width: 30%;
+  height: auto;
+}
 }

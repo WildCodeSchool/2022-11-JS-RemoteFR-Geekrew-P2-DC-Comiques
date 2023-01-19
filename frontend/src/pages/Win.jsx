@@ -3,12 +3,11 @@ import { Link } from "react-router-dom";
 import styles from "../styles/Win.css";
 import logo from "../assets/LogoGitPushForce.png";
 
-function ComponentWin() {
+function Win() {
   return (
     <div className={styles.fond}>
-      <Link to="/Home">
-        <img src={logo} alt="Logo de l'application" className={styles.logo} />
-      </Link>
+      <img src={logo} alt="Logo de l'application" className={styles.logo} />
+
       <div className={styles["text-container"]}>
         <h1 className={styles.text}>Api end</h1>
         <p>
@@ -18,8 +17,16 @@ function ComponentWin() {
           force !
         </p>
       </div>
+      <div>
+        <Link to="/">
+          <button type="button" className={styles.btnExit}>
+            <span>retour à l'accueil</span>
+          </button>
+        </Link>
+        ;
+      </div>
     </div>
   );
 }
 
-export default ComponentWin;
+export default Win;
