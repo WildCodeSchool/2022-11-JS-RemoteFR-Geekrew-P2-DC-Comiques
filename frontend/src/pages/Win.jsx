@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import styles from "../styles/Win.module.css";
+import styles from "../styles/Win.css";
 import logo from "../assets/LogoGitPushForce.png";
 
 function Win() {
@@ -29,4 +29,4 @@ function Win() {
   );
 }
 
-export default ComponentWin;
+export default Win;
