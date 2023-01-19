@@ -29,4 +29,4 @@ function Win() {
   );
 }
 
-export default Win;
+export default ComponentWin;
