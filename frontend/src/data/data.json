@@ -179,25 +179,26 @@
       "text": "Pour déployer votre code :",
       "choices": [
         {
-          "id": "ch017",
+          "id": "ch019",
           "type": "popUp",
           "text": "Push",
-          "popUpText": "Tu ne respectes pas le workflow de la Git Push Force"
+          "popUpText": "Tu ne respectes pas le workflow de la Git Push Force",
+          "goTo": "ec015"
         },
         {
-          "id": "ch018",
+          "id": "ch020",
           "type": "popUp",
           "text": "Pull",
           "popUpText": "Excellent ! Vous avez récupéré le travail accompli en parallèle de votre mission par vos vaillant.e.s collègues de la git push force ! Vous êtes désormais serein pour la suite de vos actions."
         },
         {
-          "id": "ch017",
+          "id": "ch021",
           "type": "popUp",
           "text": "Fetch",
           "popUpText": "Bien vu ! Il faut savoir où en sont les avancées de vos collègues de la Git Push Force dans les combats sur le terrain principal !"
         },
         {
-          "id": "ch018",
+          "id": "ch022",
           "type": "popUp",
           "text": "Merge",
           "popUpText": "Excellent ! Vous avez pris en compte les progrès de vos vaillant.e.s collègues et les avez intégrés à votre travail à vous."
