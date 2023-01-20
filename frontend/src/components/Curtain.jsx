@@ -7,7 +7,7 @@ function Curtain() {
 
   const handleChange = () => {
     setClosed(styles.buttonOpened);
-   
+
     new Audio(bruitPorte).play();
   };
 
