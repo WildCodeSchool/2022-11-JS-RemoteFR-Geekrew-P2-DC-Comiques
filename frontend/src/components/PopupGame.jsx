@@ -4,19 +4,17 @@ import PropTypes from "prop-types";
 import styles from "../styles/PopupGame.module.css";
 
 function PopupGame({ visibility, setVisibility }) {
-  if (!visibility) return null;
-
   return (
-    <div className={styles.overlay}>
-      <div className={styles.PopupContainer}>
+    <div>
+      <div className={styles["popup-container"]}>
         <button
           type="button"
-          className={styles.closeBtn}
+          className={styles["close-button"]}
           onClick={() => setVisibility(!visibility)}
         >
-          <p className={styles.croix}>X</p>
+          <p className={styles.exit}>X</p>
         </button>
-        <div className={styles.content}>
+        <div>
           <h1>Attention</h1>
           <p>voulez vous vraiment quitter la partie ?</p>
         </div>

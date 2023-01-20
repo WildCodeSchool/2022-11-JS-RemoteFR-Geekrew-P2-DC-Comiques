@@ -22,6 +22,9 @@ function Game() {
   return (
     <div>
       <Logo />
+      {visibility && (
+        <PopupGame visibility={visibility} setVisibility={setVisibility} />
+      )}
       {type === "scenarioCard" && (
         <ClassicCard
           setScenario={setScenario}
@@ -49,7 +52,6 @@ function Game() {
           type={event.type}
         />
       )}
-      <PopupGame visibility={visibility} setVisibility={setVisibility} />
     </div>
   );
 }
