@@ -19,11 +19,18 @@ function Game() {
 
   const [visibility, setVisibility] = useState(false);
 
+  const [popUpText, setPopUpText] = useState("");
+
   return (
     <div>
       <Logo />
       {visibility && (
-        <PopupGame visibility={visibility} setVisibility={setVisibility} />
+        <PopupGame
+          visibility={visibility}
+          setVisibility={setVisibility}
+          choices={scenario.choices}
+          popUpText={popUpText}
+        />
       )}
       {type === "scenarioCard" && (
         <ClassicCard
@@ -37,6 +44,7 @@ function Game() {
           choices={scenario.choices}
           visibility={visibility}
           setVisibility={setVisibility}
+          setPopUpText={setPopUpText}
         />
       )}
       {type === "eventCard" && (

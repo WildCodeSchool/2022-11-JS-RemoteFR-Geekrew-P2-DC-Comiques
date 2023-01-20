@@ -1,13 +1,18 @@
 .exit {
+  display: flex;
+  justify-content: flex-end;
   font-size: 2rem;
   font-weight: 900;
   color: rgb(53, 49, 49);
+  margin: 0;
 }
 
 .popup-container {
-  position:fixed;
-  top:50px;
-  left:50px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 50px;
+  left: 50px;
   z-index: 50;
   background-color: rgba(175, 166, 177, 0.7);
   border-radius: 25px;

@@ -12,6 +12,7 @@ function ClassicCard({
   choices,
   visibility,
   setVisibility,
+  setPopUpText,
 }) {
   const direction = (goTo, type) => {
     if (type === "scenarioCard") {
@@ -25,8 +26,9 @@ function ClassicCard({
     setType(type);
   };
 
-  const triggerPopup = () => {
+  const triggerPopup = (popText) => {
     setVisibility(!visibility);
+    setPopUpText(popText);
   };
 
   return (
@@ -42,7 +44,7 @@ function ClassicCard({
             key={choice.goTo}
             onClick={() => {
               if (choice.type === "popUp") {
-                triggerPopup();
+                triggerPopup(choice.popUpText);
               }
               if (
                 choice.type === "eventCard" ||
@@ -69,6 +71,7 @@ ClassicCard.propTypes = {
   text: PropTypes.string.isRequired,
   visibility: PropTypes.bool.isRequired,
   setVisibility: PropTypes.func.isRequired,
+  setPopUpText: PropTypes.func.isRequired,
   choices: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
