@@ -4,7 +4,8 @@ import styles from "../styles/PopupGame.module.css";
 
 function PopupGame({ visibility, setVisibility, popUpText }) {
   return (
-    <div>
+    <div className={styles["all-popup-container"]}>
+      <div className={styles.uncliquable}></div>
       <div className={styles["popup-container"]}>
         <button
           type="button"

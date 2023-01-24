@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { useState } from "react";
 import data from "../data/data.json";
 import styles from "../styles/Game.module.css";
 
@@ -14,6 +15,8 @@ function ClassicCard({
   setVisibility,
   setPopUpText,
 }) {
+  const [charabiaString, setCharabiaString] = useState(false);
+
   const direction = (goTo, type) => {
     if (type === "scenarioCard") {
       const newScenario = data.scenarioCards.find((obj) => obj.id === goTo);
@@ -26,9 +29,24 @@ function ClassicCard({
     setType(type);
   };
 
-  const triggerPopup = (popText) => {
+  const triggerPopup = (popUpText) => {
     setVisibility(!visibility);
-    setPopUpText(popText);
+    setPopUpText(popUpText);
+  };
+
+  const popUpDirection = (id, popUpText) => {
+    if (id === "ch007") {
+      triggerPopup(popUpText);
+      setCharabiaString(true);
+    }
+  };
+
+  const buttonStyle = (type) => {
+    if (charabiaString && type === "popUp") {
+      return styles["clicked-button"];
+    } else {
+      return styles.button;
+    }
   };
 
   return (
@@ -39,12 +57,12 @@ function ClassicCard({
       <div className={styles.choice}>
         {choices.map((choice) => (
           <button
-            className={styles.button}
+            className={buttonStyle(choice.type)}
             type="button"
             key={choice.goTo}
             onClick={() => {
               if (choice.type === "popUp") {
-                triggerPopup(choice.popUpText);
+                popUpDirection(choice.id, choice.popUpText);
               }
               if (
                 choice.type === "eventCard" ||
