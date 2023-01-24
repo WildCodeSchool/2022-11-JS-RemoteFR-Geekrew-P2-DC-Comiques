@@ -18,8 +18,7 @@
           "text": "Vous lui envoyez ctrl+alt+suppr dans son immense gueule dentée",
           "goTo": "ec001"
         }
-      ],
-      "popUpText": []
+      ]
     },
     {
       "id": "sc002",
@@ -45,8 +44,7 @@
           "text": "Vous vous empressez d’aller voir express",
           "goTo": "sc005"
         }
-      ],
-      "popUpText": []
+      ]
     },
     {
       "id": "sc003",
@@ -64,7 +62,7 @@
           "id": "ch007",
           "type": "popUp",
           "text": "Vous lui offrez un string",
-          "popUpText": [0]
+          "popUpText": "Même si le charabia est touché par l’attention, cela ne suffit pas, il faut essayer autre chose."
         },
         {
           "id": "ch008",
@@ -72,9 +70,6 @@
           "text": "Vous lui bottez l’array",
           "goTo": "ec002"
         }
-      ],
-      "popUpText": [
-        "Même si le charabia est touché par l’attention, cela ne suffit pas, il faut essayer autre chose."
       ]
     },
     {
@@ -95,8 +90,7 @@
           "text": "Vous tirez tirez",
           "goTo": "ec009"
         }
-      ],
-      "popUpText": []
+      ]
     },
     {
       "id": "sc005",
@@ -116,8 +110,7 @@
           "text": "Vous changez de route",
           "goTo": "ec005"
         }
-      ],
-      "popUpText": []
+      ]
     },
     {
       "id": "sc006",
@@ -137,8 +130,7 @@
           "text": "Vous divisez le tableau en 2",
           "goTo": "ec007"
         }
-      ],
-      "popUpText": []
+      ]
     },
     {
       "id": "sc007",
@@ -158,8 +150,7 @@
           "text": "Vous lui répondez un truc du genre « Vous fetchiez j’ai des choses plus graves à régler »",
           "goTo": "ec008"
         }
-      ],
-      "popUpText": []
+      ]
     },
     {
       "id": "sc008",
@@ -179,8 +170,7 @@
           "text": "Vous lui mettez une grande tarte dans sa gueule et lui demandez un peu de SILENCE !",
           "goTo": "ec011"
         }
-      ],
-      "popUpText": []
+      ]
     },
     {
       "id": "sc011",
@@ -189,34 +179,30 @@
       "text": "Pour déployer votre code :",
       "choices": [
         {
-          "id": "ch017",
+          "id": "ch019",
           "type": "popUp",
           "text": "Push",
-          "popUpText": [0]
+          "popUpText": "Tu ne respectes pas le workflow de la Git Push Force",
+          "goTo": "ec015"
         },
         {
-          "id": "ch018",
+          "id": "ch020",
           "type": "popUp",
           "text": "Pull",
-          "popUpText": [1]
+          "popUpText": "Excellent ! Vous avez récupéré le travail accompli en parallèle de votre mission par vos vaillant.e.s collègues de la git push force ! Vous êtes désormais serein pour la suite de vos actions."
         },
         {
-          "id": "ch017",
+          "id": "ch021",
           "type": "popUp",
           "text": "Fetch",
-          "popUpText": [2]
+          "popUpText": "Bien vu ! Il faut savoir où en sont les avancées de vos collègues de la Git Push Force dans les combats sur le terrain principal !"
         },
         {
-          "id": "ch018",
+          "id": "ch022",
           "type": "popUp",
           "text": "Merge",
-          "popUpText": [3]
+          "popUpText": "Excellent ! Vous avez pris en compte les progrès de vos vaillant.e.s collègues et les avez intégrés à votre travail à vous."
         }
-      ],
-      "popUpText": [
-        "Tu ne respectes pas le workflow de la Git Push Force",
-        "Bien vu ! Il faut savoir où en sont les avancées de vos collègues de la Git Push Force dans les combats sur le terrain principal !",
-        "Excellent ! Vous avez pris en compte les progrès de vos vaillant.e.s collègues et les avez intégrés à votre travail à vous."
       ]
     }
   ],

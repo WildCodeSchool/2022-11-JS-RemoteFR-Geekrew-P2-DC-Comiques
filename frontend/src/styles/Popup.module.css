@@ -17,6 +17,7 @@ button {
   width: 100%;
   height: 100%;
 }
+
 .popupContainer {
   max-width: 600px;
   width: 100%;
@@ -33,7 +34,6 @@ button {
   position: fixed;
   top: 2px;
   right: 8px;
-
   cursor: pointer;
   font-weight: bolder;
   font-size: 1.5rem;
@@ -66,18 +66,22 @@ button {
   border: none;
   color: #ffffff;
 }
+
 a {
   width: 100%;
 }
+
 span {
   color: black;
   font-size: large;
   font-weight: 900;
 }
+
 .croix {
   font-size: 2rem;
   font-weight: 900;
 }
+
 .btnExit {
   background-color: #09f1d1;
   border-radius: 25px;

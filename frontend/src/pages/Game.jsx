@@ -4,6 +4,7 @@ import ClassicCard from "../components/ClassicCard";
 import CrashHero from "../components/CrashHero";
 import data from "../data/data.json";
 import Logo from "../components/Logo";
+import PopupGame from "../components/PopupGame";
 
 function Game() {
   const [scenario, setScenario] = useState(
@@ -16,9 +17,21 @@ function Game() {
 
   const [type, setType] = useState("scenarioCard");
 
+  const [visibility, setVisibility] = useState(false);
+
+  const [popUpText, setPopUpText] = useState("");
+
   return (
     <div>
       <Logo />
+      {visibility && (
+        <PopupGame
+          visibility={visibility}
+          setVisibility={setVisibility}
+          choices={scenario.choices}
+          popUpText={popUpText}
+        />
+      )}
       {type === "scenarioCard" && (
         <ClassicCard
           setScenario={setScenario}
@@ -29,6 +42,9 @@ function Game() {
           title={scenario.title}
           text={scenario.text}
           choices={scenario.choices}
+          visibility={visibility}
+          setVisibility={setVisibility}
+          setPopUpText={setPopUpText}
         />
       )}
       {type === "eventCard" && (

@@ -1,5 +1,5 @@
 .buttonClosed {
-  position: absolute;
+  position: fixed;
   top: 0%;
   right: 0%;
   width: 100%;
@@ -7,7 +7,6 @@
   cursor: pointer;
   color: floralwhite;
   background-image: url("../assets/na8g2s5j.bmp");
-  z-index: 10;
 }
 
 .buttonOpened {
@@ -16,7 +15,7 @@
 }
 @keyframes Slide {
   from {
-    position: absolute;
+    position: fixed;
     top: 0%;
     right: 0%;
     width: 100%;
@@ -26,7 +25,7 @@
     background-image: url("../assets/na8g2s5j.bmp");
   }
   to {
-    position: absolute;
+    position: fixed;
     top: -100%;
     right: 0%;
     width: 100%;
