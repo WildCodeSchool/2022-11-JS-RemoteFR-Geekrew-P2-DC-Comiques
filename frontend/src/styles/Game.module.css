@@ -6,7 +6,8 @@
 html,
 body {
   height: 100%;
-  background-color: #46204f;
+  background-color: #666C77;
+  color:#D1B9AB;
 }
 
 h1 {
@@ -14,7 +15,7 @@ h1 {
 }
 
 .main {
-  display:flex;
+  display: flex;
   flex-direction: column;
   margin: 0 4px;
   padding: 20px 5px;
@@ -22,7 +23,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(175, 166, 177, 1);
+  background-color: #041C2E;
   border-radius: 25px;
 }
 
@@ -31,40 +32,38 @@ h1 {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 25px;
-  grid-row-gap: 25px; 
-  
+  grid-row-gap: 25px;
 }
 
 .img {
   width: 100%;
   border-radius: 25px;
-  height:500px;
-
+  height: 500px;
 }
 
 .button {
   padding: 10px 20px;
-  border: none;  
-  color: #fff;
-  border-radius: 7px;
+  border: none;
+  color: #D1B9AB;
+  border-radius: 15px;
   letter-spacing: 4px;
   transition: 0.5s;
   transition-property: box-shadow;
   width: 170px;
   height: 100%;
   cursor: pointer;
-  background: rgb(0,140,255);
-  box-shadow: 0 0 25px rgb(0,140,255);
+  background: #008cff;
+  box-shadow: 0 0 17px #008cff;
+  border: #008cff 5px solid;
 }
-.button:hover{
-  box-shadow: 0 0 5px rgb(0,140,255),
-  0 0 25px rgb(0,140,255),
-  0 0 50px rgb(0,140,255),
-  0 0 100px rgb(0,140,255)
+.button:hover {
+  box-shadow: 0 0 5px rgb(0, 140, 255), 0 0 25px rgb(0, 140, 255),
+    0 0 50px rgb(0, 140, 255), 0 0 100px rgb(0, 140, 255);
+    border: #7B95A8 5px solid;
 }
 
-p{
-  display:flex;
+p {
+  display: flex;
   justify-content: center;
   align-items: center;
   text-align: left;
