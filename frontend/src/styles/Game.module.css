@@ -14,6 +14,8 @@ h1 {
 }
 
 .main {
+  display:flex;
+  flex-direction: column;
   margin: 0 4px;
   padding: 20px 5px;
   height: 850px;
@@ -25,22 +27,49 @@ h1 {
 }
 
 .choice {
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 25px;
+  grid-row-gap: 25px; 
+  
 }
 
 .img {
   width: 100%;
   border-radius: 25px;
+  height:500px;
+
 }
 
 .button {
-  background-color: #09f1d1;
-  border-radius: 25px;
-  border: none;
-  box-shadow: 3px 2px 5px rgb(115, 114, 114);
+  padding: 10px 20px;
+  border: none;  
+  color: #fff;
+  border-radius: 7px;
+  letter-spacing: 4px;
+  transition: 0.5s;
+  transition-property: box-shadow;
   width: 170px;
-  height: 70px;
+  height: 100%;
   cursor: pointer;
+  background: rgb(0,140,255);
+  box-shadow: 0 0 25px rgb(0,140,255);
+}
+.button:hover{
+  box-shadow: 0 0 5px rgb(0,140,255),
+  0 0 25px rgb(0,140,255),
+  0 0 50px rgb(0,140,255),
+  0 0 100px rgb(0,140,255)
+}
+
+p{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }

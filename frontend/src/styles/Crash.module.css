@@ -48,12 +48,22 @@
   text-align: left;
 }
 .button {
-  background-color: #09f1d1;
-  border-radius: 25px;
-  border: none;
-  box-shadow: 3px 2px 5px rgb(115, 114, 114);
+  padding: 10px 20px;
+  border: none;  
+  color: #fff;
+  border-radius: 7px;
+  letter-spacing: 4px;
+  transition: 0.5s;
+  transition-property: box-shadow;
   width: 170px;
-  height: 70px;
-  margin-top: 2rem;
+  height: 100%;
   cursor: pointer;
+  background: rgb(0,140,255);
+  box-shadow: 0 0 25px rgb(0,140,255);
+}
+.button:hover{
+  box-shadow: 0 0 5px rgb(0,140,255),
+  0 0 25px rgb(0,140,255),
+  0 0 50px rgb(0,140,255),
+  0 0 100px rgb(0,140,255)
 }
