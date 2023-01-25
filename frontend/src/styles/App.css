@@ -4,6 +4,7 @@
 }
 
 body {
+  height: 100vh;
   font-family: "MerriweatherSans-Light";
   margin: 0;
   box-sizing: border-box;

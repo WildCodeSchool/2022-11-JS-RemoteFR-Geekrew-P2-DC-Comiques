@@ -28,7 +28,8 @@
   display: flex;
   justify-content: center;
   align-content: center;
-  z-index: 10;
+
+  z-index: 12;
 }
 
 .logo {
