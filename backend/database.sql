@@ -5,8 +5,8 @@ CREATE TABLE `event_card` (
   `type` varchar(255) NOT NULL,
   `origin` varchar(255) NOT NULL,
   `image_source` varchar(255) NOT NULL,
-  `text` text NOT NULL,
-  `button_text` varchar(255) NOT NULL,
+  `button_text` text NOT NULL,
+  `text` varchar(255) NOT NULL,
   `go_to` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;

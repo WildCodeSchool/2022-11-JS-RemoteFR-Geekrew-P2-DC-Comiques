@@ -1,7 +1,6 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import data from "../data/data.json";
 import styles from "../styles/Game.module.css";
 
 function ClassicCard({
@@ -15,6 +14,8 @@ function ClassicCard({
   visibility,
   setVisibility,
   setPopUpText,
+  dataScenarios,
+  dataEvents,
 }) {
   const [buttonClicked, setbuttonClicked] = useState([]);
   const [fetch, setfetch] = useState(false);
@@ -23,11 +24,11 @@ function ClassicCard({
 
   const direction = (goTo, type) => {
     if (type === "scenarioCard") {
-      const newScenario = data.scenarioCards.find((obj) => obj.id === goTo);
+      const newScenario = dataScenarios.find((obj) => obj.id === goTo);
       setScenario(newScenario);
     }
     if (type === "eventCard") {
-      const newEvent = data.eventCards.find((obj) => obj.id === goTo);
+      const newEvent = dataEvents.find((obj) => obj.id === goTo);
       setEvent(newEvent);
     }
     setType(type);
@@ -49,7 +50,7 @@ function ClassicCard({
     if (id === "ch019") {
       // Carte 11 Choix Push
       if (!pull && !merge && !fetch) {
-        setEvent(data.eventCards.find((obj) => obj.id === "ec015"));
+        setEvent(dataEvents.find((obj) => obj.id === "ec015"));
         setType("eventCard");
       }
       if (pull || merge) {
@@ -149,6 +150,8 @@ ClassicCard.propTypes = {
       goTo: PropTypes.string.isRequired,
     })
   ).isRequired,
+  dataScenarios: PropTypes.shape().isRequired,
+  dataEvents: PropTypes.shape().isRequired,
 };
 
 export default ClassicCard;
