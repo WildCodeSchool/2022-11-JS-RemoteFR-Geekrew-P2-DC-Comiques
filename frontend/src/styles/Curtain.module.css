@@ -12,7 +12,10 @@
 .buttonOpened {
   animation-duration: 3s;
   animation-name: Slide;
+  position: absolute;
+  z-index: 50;
 }
+
 @keyframes Slide {
   from {
     position: fixed;
