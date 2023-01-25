@@ -27,7 +27,7 @@ function ClassicCard({
     <div className={styles.main}>
       <img src={imageSource} className={styles.img} alt="Labo" />
       <h1>{title}</h1>
-      <p>{text}</p>
+      <p className={styles.text}>{text}</p>
       <div className={styles.choice}>
         {choices.map((choice) => (
           <button

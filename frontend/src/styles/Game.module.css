@@ -11,6 +11,7 @@ body {
 
 h1 {
   font-family: "OpenSans-BoldItalic";
+  margin-top: 2rem;
 }
 
 .main {
@@ -20,27 +21,85 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(175, 166, 177, 1);
+  background-color: #fdb72a;
   border-radius: 25px;
+  color: white;
+  box-shadow: 0 20px 35px #fffeff;
 }
 
 .choice {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   justify-content: space-evenly;
   width: 100%;
+  padding-left: 5%;
 }
 
 .img {
   width: 100%;
   border-radius: 25px;
+  height:30%;
+  transition:transform 0.1s;
 }
 
+
+
 .button {
+  
+  margin-top: 1rem;
+  font-size: 1rem;
   background-color: #09f1d1;
   border-radius: 25px;
-  border: none;
-  box-shadow: 3px 2px 5px rgb(115, 114, 114);
   width: 170px;
-  height: 70px;
-  cursor: pointer;
+  height: 100px;
+  border:#9bd3e6 0.125em solid;
+  cursor: pointer;  
+  padding: 10px 20px;
+  border: none;
+  transition: 0.5s;
+  transition-property: box-shadow;
 }
+.button{
+  background: #09f1d1;
+  box-shadow: 0 0 25px #09f1d1;
+}
+.button:hover {
+  box-shadow: 0 0 5px #08ffde,
+              0 0 25px #08ffde,
+              0 0 50px #08ffde,
+              0 0 100px #08ffde;
+}
+
+
+p{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align:left;
+  height: 200px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  line-height: 1.5em;
+  font-weight: 700;
+  background-color: #800060;
+  border-radius: 25px;
+  
+}
+
+.text{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align:left;
+  height: 200px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  line-height: 1.5em;
+  font-weight: 700;
+  background-color: #800060;
+  border-radius: 25px;
+  }
+
+
+
+
