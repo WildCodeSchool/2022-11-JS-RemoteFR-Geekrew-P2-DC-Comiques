@@ -105,11 +105,13 @@ function ClassicCard({
 
   return (
     <div className={styles.main}>
-      <img
-        src={`${backEndURL}/assets/images/${imageSource}`}
-        className={styles.img}
-        alt="Labo"
-      />
+      <div className={styles.containerImg}>
+        <img
+          src={`${backEndURL}/assets/images/${imageSource}`}
+          className={styles.img}
+          alt="Labo"
+        />
+      </div>
       <h1>{title}</h1>
       <p>{text}</p>
       <div className={styles.choice}>
