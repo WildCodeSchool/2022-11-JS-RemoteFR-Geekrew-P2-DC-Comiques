@@ -3,6 +3,8 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "../styles/Game.module.css";
 
+const backEndURL = import.meta.env.VITE_BACKEND_URL;
+
 function ClassicCard({
   setEvent,
   setScenario,
@@ -128,9 +130,15 @@ function ClassicCard({
 
   return (
     <div className={styles.main}>
-      <img src={imageSource} className={styles.img} alt="Labo" />
+      <div className={styles.containerImg}>
+        <img
+          src={`${backEndURL}/assets/images/${imageSource}`}
+          className={styles.img}
+          alt="Labo"
+        />
+      </div>
       <h1>{title}</h1>
-      <p>{text}</p>
+      <p className={styles.text}>{text}</p>
       <div className={styles.choice}>
         {choices.map((choice) => (
           <button

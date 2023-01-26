@@ -7,23 +7,23 @@ function Win() {
   return (
     <div className={styles.fond}>
       <img src={logo} alt="Logo de l'application" className={styles.logo} />
-
-      <div className={styles["text-container"]}>
-        <h1 className={styles.text}>Api end</h1>
-        <p>
-          Splendide ! L’ignominieuse code-erreur détale en voyant la propreté et
-          la clareté de vos modifications du code-source. L’application est
-          sauvée ! Encore une tâche accomplie avec bravoure par la git push
-          force !
-        </p>
-      </div>
-      <div>
-        <Link to="/">
-          <button type="button" className={styles.btnExit}>
-            <span>retour à l'accueil</span>
-          </button>
-        </Link>
-        ;
+      <div className={styles.block}>
+        <div className={styles.text_container}>
+          <h1 className={styles.text}>Api end</h1>
+          <p>
+            Splendide ! L’ignominieuse code-erreur détale en voyant la propreté
+            et la clareté de vos modifications du code-source. L’application est
+            sauvée ! Encore une tâche accomplie avec bravoure par la git push
+            force !
+          </p>
+        </div>
+        <div>
+          <Link to="/">
+            <button type="button" className={styles.btnExit}>
+              retour à l'accueil
+            </button>
+          </Link>
+        </div>
       </div>
     </div>
   );

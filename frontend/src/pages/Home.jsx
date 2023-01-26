@@ -5,7 +5,6 @@ import Footer from "../components/Footer";
 import HomeText from "../components/HomeText";
 import Curtain from "../components/Curtain";
 import data from "../data/homecredits.json";
-
 import styles from "../styles/Home.module.css";
 
 function Home() {
