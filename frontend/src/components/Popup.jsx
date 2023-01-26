@@ -29,7 +29,6 @@ function Popup({ open, onClose }) {
                 <span>Quitter la partie</span>
               </button>
             </Link>
-            ;
           </div>
         </div>
       </div>

@@ -2,7 +2,6 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import PropTypes from "prop-types";
 import styles from "../styles/Crash.module.css";
-import data from "../data/data.json";
 
 function CrashHero({
   setScenario,
@@ -13,6 +12,8 @@ function CrashHero({
   buttonText,
   goTo,
   type,
+  dataScenarios,
+  dataEvents,
 }) {
   const navigate = useNavigate();
   const direction = (pathTo, eventType) => {
@@ -20,18 +21,18 @@ function CrashHero({
       navigate(`/`);
     }
     if (eventType === "turn back") {
-      const newScenario = data.scenarioCards.find((obj) => obj.id === "sc002");
+      const newScenario = dataScenarios.find((obj) => obj.id === "sc002");
       setScenario(newScenario);
       setType("scenarioCard");
     }
     if (eventType === "transition") {
       if (pathTo.charAt(0) === "e") {
-        const newEventCard = data.eventCards.find((obj) => obj.id === pathTo);
+        const newEventCard = dataEvents.find((obj) => obj.id === pathTo);
         setEvent(newEventCard);
         setType("eventCard");
       }
       if (pathTo.charAt(0) === "s") {
-        const newScenario = data.scenarioCards.find((obj) => obj.id === pathTo);
+        const newScenario = dataScenarios.find((obj) => obj.id === pathTo);
         setScenario(newScenario);
         setType("scenarioCard");
       }
@@ -69,6 +70,8 @@ CrashHero.propTypes = {
   buttonText: PropTypes.string.isRequired,
   goTo: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
+  dataScenarios: PropTypes.shape().isRequired,
+  dataEvents: PropTypes.shape().isRequired,
 };
 
 export default CrashHero;

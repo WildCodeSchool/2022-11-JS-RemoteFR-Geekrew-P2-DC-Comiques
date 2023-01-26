@@ -6,12 +6,13 @@
 html,
 body {
   height: 100%;
-  background-color: #666C77;
-  color:#D1B9AB;
+  background-color: #666c77;
+  color: #d1b9ab;
 }
 
 h1 {
   font-family: "OpenSans-BoldItalic";
+  margin-top: 2rem;
 }
 
 .main {
@@ -19,12 +20,14 @@ h1 {
   flex-direction: column;
   margin: 0 4px;
   padding: 20px 5px;
-  height: 850px;
+  height: 94vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #041C2E;
+  background-color: #041c2e;
   border-radius: 25px;
+  color: white;
+  box-shadow: 0 20px 35px #fffeff;
 }
 
 .choice {
@@ -44,7 +47,7 @@ h1 {
 .button {
   padding: 10px 20px;
   border: none;
-  color: #D1B9AB;
+  color: #d1b9ab;
   border-radius: 15px;
   letter-spacing: 4px;
   transition: 0.5s;
@@ -59,7 +62,7 @@ h1 {
 .button:hover {
   box-shadow: 0 0 5px rgb(0, 140, 255), 0 0 25px rgb(0, 140, 255),
     0 0 50px rgb(0, 140, 255), 0 0 100px rgb(0, 140, 255);
-    border: #7B95A8 5px solid;
+  border: #7b95a8 5px solid;
 }
 
 p {
