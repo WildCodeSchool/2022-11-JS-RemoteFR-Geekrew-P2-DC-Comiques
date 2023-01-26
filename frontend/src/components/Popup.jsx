@@ -22,11 +22,11 @@ function Popup({ open, onClose }) {
           </div>
           <div className={styles.btnContainer}>
             <button type="button" className={styles.btnExit} onClick={onClose}>
-              <span>revenir au jeu</span>
+              <p>revenir au jeu</p>
             </button>
             <Link to="/">
               <button type="button" className={styles.btnExit}>
-                <span>Quitter la partie</span>
+                <p>Quitter la partie</p>
               </button>
             </Link>
           </div>

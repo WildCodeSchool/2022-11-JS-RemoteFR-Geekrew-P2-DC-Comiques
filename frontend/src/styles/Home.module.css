@@ -28,6 +28,7 @@
   display: flex;
   justify-content: center;
   align-content: center;
+
   z-index: 12;
 }
 
@@ -47,7 +48,7 @@
 .title {
   font-family: "Rocket-Rinder";
   max-width: 70ch;
-  background-color: rgba(175, 166, 177, 0.7);
+  background-color: rgb(0, 140, 255, 0.8);
   border-radius: 20px;
   text-justify: auto;
 }
@@ -55,13 +56,19 @@
 .home-text {
   font-family: "MerriweatherSans-Light";
   grid-column: span 2 / auto;
-  background-color: rgba(175, 166, 177, 0.7);
+  background-color: rgb(0, 140, 255, 0.8);
   border-radius: 20px;
-  height: 10rem;
+  height: 25rem;
+  text-align: left;
   margin: 4%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 1.25rem;
 }
 
 .button-container {
@@ -75,7 +82,7 @@
   bottom: 0;
   width: 100%;
   height: 1.5rem;
-  background-color: black;
+  background-color: #041c2e;
   color: white;
   display: flex;
   justify-content: center;
@@ -83,20 +90,22 @@
   font-size: 0.9em;
 }
 
-button {
-  border: none;
-  margin: 0;
-  padding: 0;
-  width: auto;
-  overflow: visible;
-  background: transparent;
-}
 .button {
-  background-color: #09f1d1;
-  border-radius: 25px;
+  padding: 10px 20px;
   border: none;
-  box-shadow: 3px 2px 5px rgb(115, 114, 114);
+  color: #fff;
+  border-radius: 7px;
+  letter-spacing: 4px;
+  transition: 0.5s;
+  transition-property: box-shadow;
   width: 170px;
-  height: 70px;
+  height: 100%;
   cursor: pointer;
+  background: rgb(0, 140, 255);
+  box-shadow: 0 0 25px rgb(0, 140, 255);
+}
+.button:hover {
+  box-shadow: 0 0 5px rgb(0, 140, 255), 0 0 25px rgb(0, 140, 255),
+    0 0 50px rgb(0, 140, 255), 0 0 100px rgb(0, 140, 255);
+  border: #7b95a8 5px solid;
 }

@@ -113,7 +113,7 @@ function ClassicCard({
         />
       </div>
       <h1>{title}</h1>
-      <p>{text}</p>
+      <p className={styles.text}>{text}</p>
       <div className={styles.choice}>
         {choices.map((choice) => (
           <button
