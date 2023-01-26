@@ -30,15 +30,17 @@
 }
 
 .greyBox {
-  background-color: rgb(175, 166, 177, 0.7);
+  background-color: rgba(0, 140, 255,0.9);
   width: 60%;
-  height: 50%;
+  height:fit-content;
   margin-top: 2rem;
   border-radius: 25px;
   margin-left: auto;
   margin-right: auto;
   padding: 20px 20px 20px 20px;
   text-align: left;
+ padding-bottom: 2rem;
+
 }
 .button {
   padding: 10px 20px;
@@ -53,8 +55,10 @@
   cursor: pointer;
   background: rgb(0, 140, 255);
   box-shadow: 0 0 25px rgb(0, 140, 255);
+  margin-top:2rem;
 }
 .button:hover {
   box-shadow: 0 0 5px rgb(0, 140, 255), 0 0 25px rgb(0, 140, 255),
     0 0 50px rgb(0, 140, 255), 0 0 100px rgb(0, 140, 255);
+    border: #7b95a8 5px solid;
 }
