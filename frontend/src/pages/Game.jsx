@@ -11,6 +11,9 @@ function Game() {
   const [scenario, setScenario] = useState(null);
   const [events, setEvents] = useState([]);
   const [event, setEvent] = useState(null);
+  const [pathApp, setPathApp] = useState(false);
+  const [pathCSS, setPathCSS] = useState(false);
+  const [pathExpress, setPathExpress] = useState(false);
 
   useEffect(() => {
     axios.get("http://localhost:8000/scenario_cards").then((res) => {
@@ -60,6 +63,10 @@ function Game() {
           setPopUpText={setPopUpText}
           dataScenarios={scenarios}
           dataEvents={events}
+          pathApp={pathApp}
+          pathCSS={pathCSS}
+          pathExpress={pathExpress}
+          setPathExpress={setPathExpress}
         />
       )}
       {event && type === "eventCard" && (
@@ -75,6 +82,11 @@ function Game() {
           type={event.type}
           dataScenarios={scenarios}
           dataEvents={events}
+          pathApp={pathApp}
+          setPathApp={setPathApp}
+          pathCSS={pathCSS}
+          setPathCSS={setPathCSS}
+          pathExpress={pathExpress}
         />
       )}
     </div>
