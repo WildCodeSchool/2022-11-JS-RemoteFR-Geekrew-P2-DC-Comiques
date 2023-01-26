@@ -5,6 +5,7 @@ import ClassicCard from "../components/ClassicCard";
 import CrashHero from "../components/CrashHero";
 import Logo from "../components/Logo";
 import PopupGame from "../components/PopupGame";
+import Music from "../components/Music";
 
 function Game() {
   const [scenarios, setScenarios] = useState([]);
@@ -40,6 +41,7 @@ function Game() {
   return (
     <div>
       <Logo />
+      <Music />
       {visibility && (
         <PopupGame
           visibility={visibility}
