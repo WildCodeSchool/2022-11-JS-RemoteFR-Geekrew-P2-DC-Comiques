@@ -16,20 +16,36 @@ function ClassicCard({
   setPopUpText,
   dataScenarios,
   dataEvents,
+  pathApp,
+  pathCSS,
+  pathExpress,
+  setPathExpress,
 }) {
   const [buttonClicked, setbuttonClicked] = useState([]);
   const [fetch, setfetch] = useState(false);
   const [merge, setmerge] = useState(false);
   const [pull, setpull] = useState(false);
 
-  const direction = (goTo, type) => {
+  const direction = (goTo, type, id) => {
     if (type === "scenarioCard") {
       const newScenario = dataScenarios.find((obj) => obj.id === goTo);
       setScenario(newScenario);
     }
     if (type === "eventCard") {
-      const newEvent = dataEvents.find((obj) => obj.id === goTo);
-      setEvent(newEvent);
+      if (id === "ch015") {
+        if (pathApp && pathCSS) {
+          setEvent(dataEvents.find((obj) => obj.id === "ec013"));
+          setType("eventCard");
+        }
+        if (!pathApp || !pathCSS) {
+          setEvent(dataEvents.find((obj) => obj.id === "ec014"));
+          setType("eventCard");
+          setPathExpress(true);
+        }
+      } else {
+        const newEvent = dataEvents.find((obj) => obj.id === goTo);
+        setEvent(newEvent);
+      }
     }
     setType(type);
   };
@@ -98,6 +114,15 @@ function ClassicCard({
     if (buttonClicked.includes(id) && type === "popUp") {
       return styles["clicked-button"];
     }
+    if (id === "ch005" && pathExpress === true) {
+      return styles["clicked-button"];
+    }
+    if (id === "ch004" && pathCSS === true) {
+      return styles["clicked-button"];
+    }
+    if (id === "ch003" && pathApp === true) {
+      return styles["clicked-button"];
+    }
     return styles.button;
   };
 
@@ -120,7 +145,7 @@ function ClassicCard({
                 choice.type === "eventCard" ||
                 choice.type === "scenarioCard"
               ) {
-                direction(choice.goTo, choice.type);
+                direction(choice.goTo, choice.type, choice.id);
               }
             }}
           >
@@ -152,6 +177,10 @@ ClassicCard.propTypes = {
   ).isRequired,
   dataScenarios: PropTypes.shape().isRequired,
   dataEvents: PropTypes.shape().isRequired,
+  pathApp: PropTypes.bool.isRequired,
+  pathCSS: PropTypes.bool.isRequired,
+  pathExpress: PropTypes.bool.isRequired,
+  setPathExpress: PropTypes.func.isRequired,
 };
 
 export default ClassicCard;

@@ -14,9 +14,15 @@ function CrashHero({
   type,
   dataScenarios,
   dataEvents,
+  pathApp,
+  setPathApp,
+  pathCSS,
+  setPathCSS,
+  pathExpress,
 }) {
   const navigate = useNavigate();
-  const direction = (pathTo, eventType) => {
+
+  const direction = (pathTo, eventType, eventId) => {
     if (eventType === "game over") {
       navigate(`/`);
     }
@@ -27,9 +33,33 @@ function CrashHero({
     }
     if (eventType === "transition") {
       if (pathTo.charAt(0) === "e") {
-        const newEventCard = dataEvents.find((obj) => obj.id === pathTo);
-        setEvent(newEventCard);
-        setType("eventCard");
+        if (eventId === "ec009") {
+          if (!pathApp || !pathExpress) {
+            setEvent(dataEvents.find((obj) => obj.id === "ec014"));
+            setType("eventCard");
+            setPathCSS(true);
+          }
+          if (pathApp && pathExpress) {
+            setEvent(dataEvents.find((obj) => obj.id === "ec013"));
+            setType("eventCard");
+          }
+        }
+        if (eventId === "ec012") {
+          if (pathCSS && pathExpress) {
+            setEvent(dataEvents.find((obj) => obj.id === "ec013"));
+            setType("eventCard");
+          }
+          if (!pathCSS || !pathExpress) {
+            setEvent(dataEvents.find((obj) => obj.id === "ec014"));
+            setType("eventCard");
+            setPathApp(true);
+          }
+        }
+        if (eventId !== "ec009" && eventId !== "ec012") {
+          const newEventCard = dataEvents.find((obj) => obj.id === pathTo);
+          setEvent(newEventCard);
+          setType("eventCard");
+        }
       }
       if (pathTo.charAt(0) === "s") {
         const newScenario = dataScenarios.find((obj) => obj.id === pathTo);
@@ -52,7 +82,7 @@ function CrashHero({
           className={styles.button}
           type="button"
           key={id}
-          onClick={() => direction(goTo, type)}
+          onClick={() => direction(goTo, type, id)}
         >
           {buttonText}
         </button>
@@ -72,6 +102,11 @@ CrashHero.propTypes = {
   type: PropTypes.string.isRequired,
   dataScenarios: PropTypes.shape().isRequired,
   dataEvents: PropTypes.shape().isRequired,
+  pathApp: PropTypes.bool.isRequired,
+  setPathApp: PropTypes.func.isRequired,
+  pathCSS: PropTypes.bool.isRequired,
+  setPathCSS: PropTypes.func.isRequired,
+  pathExpress: PropTypes.func.isRequired,
 };
 
 export default CrashHero;
