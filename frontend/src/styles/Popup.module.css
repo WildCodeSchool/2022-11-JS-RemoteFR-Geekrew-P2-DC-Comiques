@@ -9,7 +9,7 @@ button {
 
 .overlay {
   /* background-color:rgba(0, 0 , 0, 1); */
-  background-color: #041C2E;
+  background-color: #041c2e;
   background-size: cover;
   position: fixed;
   background-position-x: 50%;
@@ -42,7 +42,7 @@ button {
 }
 
 .content {
-  color:#d1b9ab;
+  color: #d1b9ab;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -62,7 +62,7 @@ button {
 }
 
 .btnContainer button {
-  display:flex;
+  display: flex;
   flex-direction: row;
   width: 100%;
   margin: 1rem;
@@ -83,11 +83,10 @@ span {
 }
 
 .croix {
-  color: #D1B9AB;
+  color: #d1b9ab;
   font-size: 2rem;
   font-weight: 900;
 }
-
 
 .btnExit {
   display: flex;
@@ -107,7 +106,7 @@ span {
   box-shadow: 0 0 17px #008cff;
   border: #008cff 5px solid;
   font-size: 1.25rem;
-  text-align: center ;
+  text-align: center;
 }
 .btnExit:hover {
   box-shadow: 0 0 5px rgb(0, 140, 255), 0 0 25px rgb(0, 140, 255),
@@ -124,7 +123,6 @@ img {
   object-fit: cover;
 }
 
-
-h1{
-  color:#D1B9AB;
+h1 {
+  color: #d1b9ab;
 }

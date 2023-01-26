@@ -12,7 +12,8 @@ body {
 
 h1 {
   font-family: "OpenSans-BoldItalic";
-  margin-top: 2rem;
+  padding-top:0px;
+  
 }
 
 .main {
@@ -44,14 +45,14 @@ h1 {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: auto;
+  height:48%;
 }
 
 .img {
   width: 100%;
-  max-height: auto;
+  max-height: 100%;
   border-radius: 25px;
-  height: 500px;
+  height:100%;
 }
 
 .button {
@@ -59,7 +60,7 @@ h1 {
   border: none;
   color: #d1b9ab;
   border-radius: 15px;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   transition: 0.5s;
   transition-property: box-shadow;
   width: 170px;
@@ -75,13 +76,13 @@ h1 {
   border: #7b95a8 5px solid;
 }
 
-p {
+ .text{
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: left;
   padding-left: 10%;
   padding-right: 10%;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
