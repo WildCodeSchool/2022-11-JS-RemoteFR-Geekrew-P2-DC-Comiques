@@ -38,8 +38,18 @@ h1 {
   grid-row-gap: 25px;
 }
 
+.containerImg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
 .img {
   width: 100%;
+  max-height: auto;
   border-radius: 25px;
   height: 500px;
 }
