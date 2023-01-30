@@ -1,5 +1,4 @@
 .buttonClosed {
-  position: fixed;
   top: 0%;
   right: 0%;
   width: 100%;
@@ -7,6 +6,8 @@
   cursor: pointer;
   color: floralwhite;
   background-image: url("../assets/na8g2s5j.bmp");
+  position: absolute;
+  z-index: 50;
 }
 
 .buttonOpened {

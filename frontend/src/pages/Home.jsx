@@ -48,10 +48,12 @@ function Home() {
           welcomeMessage={welcomeMessage}
         />
         <HomeButton
+          className={styles.button1}
           buttonChoices={buttonChoices.first}
           handleChange={handleChange}
         />
         <HomeButton
+          className={styles.button2}
           buttonChoices={buttonChoices.second}
           handleChange={handleChange}
         />
