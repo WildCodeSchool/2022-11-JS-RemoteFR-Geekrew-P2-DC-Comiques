@@ -61,7 +61,7 @@
   border-radius: 20px;
   display: flex;
   justify-content: center;
-  align-items:center;
+  align-items: center;
   color: rgb(248, 220, 206);
   text-shadow: 0 0 18px rgb(186, 186, 186);
 }
@@ -83,12 +83,20 @@
   color: rgb(248, 220, 206);
 }
 
-.button-container {
-  margin: 8%;
+.buttonsContainer {
+  grid-column: span 2 / auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.button-wrap {
+  margin: 4%;
   margin-top: 4%;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 45%;
 }
 
 .button {
@@ -127,10 +135,19 @@
 }
 
 @media screen and (min-width: 768px) {
-
   .main {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 30% 20% 12% 13% 13% 12%;
+    grid-template-rows: 30% 20% 50%;
+  }
+
+  .logo-container {
+    grid-column: span 1 / auto;
+    height: 100%;
+  }
+
+  .logo {
+    transform: translate(0, 0);
+    height: 90%;
   }
 
   .title-container {
@@ -145,16 +162,28 @@
 
   .home-text {
     grid-column: span 1 / auto;
-    grid-row: span 4 / auto;
     margin-bottom: 3rem;
   }
 
-  .button-container {
+  .buttonsContainer {
+    grid-column: span 1 / auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 15%;
+    margin-top: 10%;
+  }
+
+  .button-wrap {
     margin: 4%;
+    width: 45%;
+    height: 100%;
   }
 
   .button {
-    transform: translate(0, 0);
+    transform: translate(-1rem, 0);
+    height: 100%;
   }
 
   .button1 {
@@ -164,17 +193,20 @@
   .button2 {
     grid-row: span 5 / 6;
   }
-
 }
 
 @media screen and (max-width: 430px) {
-
   .title {
     font-size: 1.4rem;
   }
 
-  .home-text{
+  .home-text {
     font-size: 0.9rem;
   }
+}
 
+@media screen and (max-height: 660px) {
+  .home-text {
+    font-size: 1rem;
+  }
 }
