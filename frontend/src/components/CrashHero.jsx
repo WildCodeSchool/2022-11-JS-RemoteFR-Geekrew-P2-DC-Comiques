@@ -77,7 +77,7 @@ function CrashHero({
       <div className={styles.greyBox}>
         <h2>{text}</h2>
       </div>
-      <div>
+      <div className={styles.divButton}>
         <button
           className={styles.button}
           type="button"

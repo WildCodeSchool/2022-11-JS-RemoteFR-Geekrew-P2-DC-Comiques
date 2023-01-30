@@ -22,11 +22,11 @@
 }
 
 .text_container {
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background-color: rgba(0, 140, 255,0.95);
+  background-color: rgba(0, 140, 255, 0.95);
   border-radius: 15px;
   opacity: 0.7;
   width: 70%;
@@ -39,7 +39,7 @@
   color: #d1b9ab;
 }
 
-.block{
+.block {
   display: flex;
   flex-direction: column;
   justify-content: center;
