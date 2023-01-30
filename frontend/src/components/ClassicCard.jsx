@@ -129,7 +129,7 @@ function ClassicCard({
   };
 
   return (
-    <div className={styles.main}>
+    <div className={styles["full-content"]}>
       <div className={styles.containerImg}>
         <img
           src={`${backEndURL}/assets/images/${imageSource}`}
@@ -137,29 +137,31 @@ function ClassicCard({
           alt="Labo"
         />
       </div>
-      <h1>{title}</h1>
-      <p className={styles.text}>{text}</p>
-      <div className={styles.choice}>
-        {choices.map((choice) => (
-          <button
-            className={buttonStyle(choice.id, choice.type)}
-            type="button"
-            key={choice.id}
-            onClick={() => {
-              if (choice.type === "popUp") {
-                popUpDirection(choice.id, choice.popUpText);
-              }
-              if (
-                choice.type === "eventCard" ||
-                choice.type === "scenarioCard"
-              ) {
-                direction(choice.goTo, choice.type, choice.id);
-              }
-            }}
-          >
-            {choice.text}
-          </button>
-        ))}
+      <div className={styles.main}>
+        <h1 className={styles["card-title"]}>{title}</h1>
+        <p className={styles.text}>{text}</p>
+        <div className={styles.choice}>
+          {choices.map((choice) => (
+            <button
+              className={buttonStyle(choice.id, choice.type)}
+              type="button"
+              key={choice.id}
+              onClick={() => {
+                if (choice.type === "popUp") {
+                  popUpDirection(choice.id, choice.popUpText);
+                }
+                if (
+                  choice.type === "eventCard" ||
+                  choice.type === "scenarioCard"
+                ) {
+                  direction(choice.goTo, choice.type, choice.id);
+                }
+              }}
+            >
+              {choice.text}
+            </button>
+          ))}
+        </div>
       </div>
     </div>
   );
