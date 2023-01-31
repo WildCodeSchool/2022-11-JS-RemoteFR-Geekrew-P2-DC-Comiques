@@ -163,6 +163,7 @@
   .home-text {
     grid-column: span 1 / auto;
     margin-bottom: 3rem;
+    font-size: 1.3em;
   }
 
   .buttonsContainer {
@@ -184,6 +185,7 @@
   .button {
     transform: translate(-1rem, 0);
     height: 100%;
+    font-size: 1rem;
   }
 
   .button1 {

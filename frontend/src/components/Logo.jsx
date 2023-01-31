@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ImgLogo from "../assets/LogoGitPushForce.png";
-import "../styles/Logo.css";
+import styles from "../styles/Logo.module.css";
 
 import Popup from "./Popup";
 
@@ -10,11 +10,11 @@ function Logo() {
   return (
     <>
       <button
-        className="popupBtn"
+        className={styles.popupBtn}
         type="button"
         onClick={() => setOpenPopup(true)}
       >
-        <img className="ImgLogo" src={ImgLogo} alt="logo" />
+        <img className={styles.ImgLogo} src={ImgLogo} alt="logo" />
       </button>
       <Popup open={openPopup} onClose={() => setOpenPopup(false)} />
     </>
