@@ -26,7 +26,7 @@
   padding: 20px;
   background-color: rgba(0, 96, 223, 0.8);
   border-radius: 25px;
-  font-size: 1, 25rem;
+  font-size: 1.25rem;
 }
 
 .exit {
@@ -70,6 +70,7 @@
   font-size: 1.5rem;
   margin-top: 1rem;
 }
+
 .pButton:hover {
   box-shadow: 0 0 5px rgb(0, 140, 255), 0 0 25px rgb(0, 140, 255),
     0 0 50px rgb(0, 140, 255), 0 0 100px rgb(0, 140, 255);
@@ -82,15 +83,20 @@
     flex-direction: column;
     justify-content: center;
     position: absolute;
-    top: 60px;
-    left: 575px;
-    right: 9px;
+    top: 4rem;
+    left: 25%;
+    right: 25%;
     z-index: 51;
     height: 280px;
     width: fit-content;
     padding: 20px;
     background-color: rgba(0, 96, 223, 0.8);
     border-radius: 25px;
-    font-size: 1, 25rem;
+    font-size: 1.25rem;
+    color: rgba(255,255,255,1);
+  }
+
+  .pButton {
+    color: rgba(255,255,255,1);
   }
 }
