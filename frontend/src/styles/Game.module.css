@@ -169,6 +169,7 @@ h1 {
   .choice {
     display: flex;
     flex-direction: column;
+    height: auto;
   }
 
   .button {
