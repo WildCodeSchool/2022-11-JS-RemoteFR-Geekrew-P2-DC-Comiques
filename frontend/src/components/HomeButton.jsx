@@ -18,7 +18,7 @@ function HomeButton({ buttonChoices, handleChange }) {
   }
 
   return (
-    <div className={styles["button-container"]}>
+    <div className={styles["button-wrap"]}>
       <button
         type="button"
         onClick={buttonChange}

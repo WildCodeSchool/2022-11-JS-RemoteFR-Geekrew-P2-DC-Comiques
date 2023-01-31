@@ -47,14 +47,16 @@ function Home() {
           credits={credits}
           welcomeMessage={welcomeMessage}
         />
-        <HomeButton
-          buttonChoices={buttonChoices.first}
-          handleChange={handleChange}
-        />
-        <HomeButton
-          buttonChoices={buttonChoices.second}
-          handleChange={handleChange}
-        />
+        <div className={styles.buttonsContainer}>
+          <HomeButton
+            buttonChoices={buttonChoices.first}
+            handleChange={handleChange}
+          />
+          <HomeButton
+            buttonChoices={buttonChoices.second}
+            handleChange={handleChange}
+          />
+        </div>
       </main>
       <Footer />
     </div>
