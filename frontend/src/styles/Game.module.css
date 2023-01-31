@@ -101,6 +101,21 @@ h1 {
   border: #7b95a8 5px solid;
 }
 
+.clicked-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border: none;
+  color: #000;
+  border-radius: 15px;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  width: 170px;
+  height: 90%;
+  background: #041c2e;
+}
+
 @media screen and (min-width: 760px) {
 
   .full-content {
@@ -163,4 +178,5 @@ h1 {
     color: rgba(255, 255, 255, 1);
     opacity: 0.8;
   }
+
 }
