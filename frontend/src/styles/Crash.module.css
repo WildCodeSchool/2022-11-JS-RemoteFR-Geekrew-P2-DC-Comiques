@@ -21,7 +21,7 @@
 .footer {
   height: 3rem;
   background-color: black;
-  color: white;
+  color: #d1b9ab;
 }
 .footerText {
   display: flex;
@@ -34,17 +34,21 @@
   width: 60%;
   height: fit-content;
   margin-top: 2rem;
-  border-radius: 25px;
+  border-radius: 7px;
   margin-left: auto;
   margin-right: auto;
   padding: 20px 20px 20px 20px;
   text-align: left;
   padding-bottom: 2rem;
 }
+
+.divButton {
+  height: 80px;
+}
 .button {
   padding: 10px 20px;
   border: none;
-  color: #fff;
+  color: #d1b9ab;
   border-radius: 7px;
   letter-spacing: 4px;
   transition: 0.5s;
@@ -60,4 +64,32 @@
   box-shadow: 0 0 5px rgb(0, 140, 255), 0 0 25px rgb(0, 140, 255),
     0 0 50px rgb(0, 140, 255), 0 0 100px rgb(0, 140, 255);
   border: #7b95a8 5px solid;
+}
+
+@media (min-width: 768px) {
+  .button {
+    position: fixed;
+    height: 80px;
+    top: 80%;
+    left: 80%;
+    transform: translate(10%, 10%);
+    padding: 5px 5px;
+    border-radius: 7px;
+    cursor: pointer;
+  }
+  .greyBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 140, 255, 0.9);
+    width: 35%;
+    height: 35%;
+    margin-top: 2rem;
+    border-radius: 7px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 20px 20px 20px;
+    text-align: left;
+    padding-bottom: 2rem;
+  }
 }
