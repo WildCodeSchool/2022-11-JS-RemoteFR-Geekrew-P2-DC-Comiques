@@ -4,8 +4,6 @@ import PropTypes from "prop-types";
 import styles from "../styles/Home.module.css";
 
 function HomeText({ active, credits, welcomeMessage, pseudo }) {
-  // const pseudo = localStorage.getItem("pseudo") || "Agent 404";
-
   return (
     <div className={styles["home-text"]}>
       {active ? credits : welcomeMessage.replace("Agent 404", pseudo)}
