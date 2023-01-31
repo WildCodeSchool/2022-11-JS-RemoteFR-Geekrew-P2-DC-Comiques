@@ -17,6 +17,11 @@ function PopupGame({ visibility, setVisibility, popUpText }) {
         <div>
           <p>{popUpText}</p>
         </div>
+        <div className={styles.buttonContainer}>
+          <button type="button" onClick={() => setVisibility(!visibility)}>
+            <p className={styles.pButton}>Continuer</p>
+          </button>
+        </div>
       </div>
     </div>
   );

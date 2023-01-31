@@ -3,11 +3,14 @@ import { useNavigate } from "react-router-dom";
 import PropTypes from "prop-types";
 import styles from "../styles/Crash.module.css";
 
+const backEndURL = import.meta.env.VITE_BACKEND_URL;
+
 function CrashHero({
   setScenario,
   setEvent,
   setType,
   id,
+  imageSource,
   text,
   buttonText,
   goTo,
@@ -74,10 +77,17 @@ function CrashHero({
 
   return (
     <div className={styles.background}>
+      <div>
+        <img
+          src={`${backEndURL}/assets/images/${imageSource}`}
+          className={styles.img}
+          alt={imageSource}
+        />
+      </div>
       <div className={styles.greyBox}>
         <h2>{text}</h2>
       </div>
-      <div>
+      <div className={styles.divButton}>
         <button
           className={styles.button}
           type="button"
@@ -96,6 +106,7 @@ CrashHero.propTypes = {
   setEvent: PropTypes.func.isRequired,
   setType: PropTypes.func.isRequired,
   id: PropTypes.string.isRequired,
+  imageSource: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
   buttonText: PropTypes.string.isRequired,
   goTo: PropTypes.string.isRequired,

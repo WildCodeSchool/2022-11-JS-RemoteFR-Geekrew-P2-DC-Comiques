@@ -1,6 +1,6 @@
 .fond {
   display: flex;
-  background-image: url("../assets/WinImg.png");
+  background-image: url("../assets/Win.jpeg");
   background-size: cover;
   background-position-x: 50%;
   background-position-y: center;
@@ -13,33 +13,41 @@
   display: flex;
   position: absolute;
   text-align: center;
-  width: 50%;
+  width: 90%;
   height: auto;
   top: 1%;
   min-width: 400px;
   min-height: auto;
-  left: 7%;
 }
 
 .text_container {
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background-color: rgba(0, 140, 255,0.95);
-  border-radius: 15px;
-  opacity: 0.7;
+  background-color: rgba(0, 140, 255, 0.95);
+  border-radius: 25px;
+  opacity: 0.9;
   width: 70%;
   height: 100%;
   margin-bottom: 2rem;
+  padding: 10px 20px;
 }
 
 .text {
   height: 40%;
   color: #d1b9ab;
+  font-weight: bold;
+  
 }
 
-.block{
+.textContent {
+  font-weight: bold;
+  text-align: justify;
+  font-size: 1.4rem;
+}
+
+.block {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -75,7 +83,7 @@
 @media (min-width: 768px) {
   .logo {
     top: 0;
-    left: 10%;
+    left: 35%;
     width: 30%;
     height: auto;
   }
