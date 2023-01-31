@@ -102,7 +102,6 @@ h1 {
 }
 
 @media screen and (min-width: 760px) {
-
   .full-content {
     position: relative;
     height: 99.6vh;
