@@ -12,6 +12,9 @@ function Home() {
   const { credits } = data;
   const { welcomeMessage } = data;
 
+  const localPseudo = localStorage.getItem("pseudo") || "Agent 404";
+  const [pseudo, setPseudo] = useState(localPseudo);
+
   const [active, setActive] = useState(false);
 
   const handleChange = () => {
@@ -32,8 +35,8 @@ function Home() {
   return (
     <div className={styles.home}>
       <Curtain />
+      <Pseudo className="pseudo" pseudo={pseudo} setPseudo={setPseudo} />
       <main className={styles.main}>
-        <Pseudo className="pseudo" />
         <div className={styles["logo-container"]}>
           <img
             className={styles.logo}
@@ -48,6 +51,7 @@ function Home() {
           active={active}
           credits={credits}
           welcomeMessage={welcomeMessage}
+          pseudo={pseudo}
         />
         <div className={styles.buttonsContainer}>
           <HomeButton
