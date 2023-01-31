@@ -6,15 +6,15 @@
 html,
 body {
   height: 100%;
-  background-color: #666c77;
-  color: #d1b9ab;
+  margin: 0;
+  background-color: #041c2e;
 }
 
 .full-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-height: 100vh;
+  box-sizing: border-box;
 }
 
 .containerImg {
@@ -64,6 +64,7 @@ h1 {
   padding-right: 10%;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  font-size: 1.1rem;
 }
 
 .choice {
@@ -84,6 +85,7 @@ h1 {
   color: #d1b9ab;
   border-radius: 15px;
   letter-spacing: 1px;
+  font-size: 0.9rem;
   transition: 0.5s;
   transition-property: box-shadow;
   width: 170px;
@@ -99,12 +101,28 @@ h1 {
   border: #7b95a8 5px solid;
 }
 
+.clicked-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border: none;
+  color: #000;
+  border-radius: 15px;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  width: 170px;
+  height: 90%;
+  background: #041c2e;
+}
+
 @media screen and (min-width: 760px) {
   .full-content {
     position: relative;
-    height: 100vh;
+    height: 99.6vh;
     flex-direction: column;
     justify-content: end;
+    margin: 0;
   }
 
   .main {
@@ -112,32 +130,34 @@ h1 {
     grid-template-columns: 1fr 1fr 0.5fr;
     grid-template-rows: 1fr 1fr 1fr;
     z-index: 2;
-    opacity: 0.8;
+    background-color: rgb(4, 28, 46, 0.8);
     height: 50%;
-    margin: 0 4px 4px 4px;
+    margin: 0 4px 0 4px;
     border-radius: 25px;
-    box-shadow: 0 20px 35px #fffeff;
+    box-shadow: 0 10px 35px #fffeff;
   }
 
   .card-title {
     grid-column-start: 1;
     grid-column-end: 4;
     font-size: 2.5rem;
+    color: rgba(255, 255, 255, 1);
   }
 
   .text {
     grid-column-start: 1;
     grid-column-end: 3;
     font-size: 1.4rem;
+    color: rgba(255, 255, 255, 1);
   }
 
   .containerImg {
     display: block;
     position: absolute;
     z-index: 0;
+    margin: 0;
     width: 100%;
     height: 100%;
-    background-position: top;
   }
 
   .img {
@@ -154,5 +174,8 @@ h1 {
   .button {
     font-weight: bold;
     font-size: 1rem;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0.8;
   }
+
 }

@@ -7,13 +7,6 @@ function PopupGame({ visibility, setVisibility, popUpText }) {
     <div className={styles["all-popup-container"]}>
       <div className={styles.uncliquable} />
       <div className={styles["popup-container"]}>
-        <button
-          type="button"
-          className={styles["close-button"]}
-          onClick={() => setVisibility(!visibility)}
-        >
-          <p className={styles.exit}>X</p>
-        </button>
         <div>
           <p>{popUpText}</p>
         </div>
