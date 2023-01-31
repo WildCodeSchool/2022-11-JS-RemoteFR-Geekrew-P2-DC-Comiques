@@ -41,7 +41,16 @@ function Game() {
   return (
     <div>
       <Logo />
-      {type === "scenarioCard" && (
+      <Pseudo />
+      {visibility && (
+        <PopupGame
+          visibility={visibility}
+          setVisibility={setVisibility}
+          choices={scenario.choices}
+          popUpText={popUpText}
+        />
+      )}
+      {scenario && type === "scenarioCard" && (
         <ClassicCard
           setScenario={setScenario}
           setEvent={setEvent}

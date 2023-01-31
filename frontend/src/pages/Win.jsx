@@ -8,7 +8,7 @@ function Win() {
   return (
     <div className={styles.fond}>
       <img src={logo} alt="Logo de l'application" className={styles.logo} />
-      <Pseudo />
+      <Pseudo className="pseudo" />
       <div className={styles.block}>
         <div className={styles.text_container}>
           <h1 className={styles.text}>API END</h1>
