@@ -1,6 +1,6 @@
 .fond {
   display: flex;
-  background-image: url("../assets/WinImg.png");
+  background-image: url("../assets/Win.jpeg");
   background-size: cover;
   background-position-x: 50%;
   background-position-y: center;
@@ -13,7 +13,7 @@
   display: flex;
   position: absolute;
   text-align: center;
-  width: 50%;
+  width: 90%;
   height: auto;
   top: 1%;
   min-width: 400px;
@@ -81,7 +81,7 @@
 @media (min-width: 768px) {
   .logo {
     top: 0;
-    left: 10%;
+    left: 35%;
     width: 30%;
     height: auto;
   }
