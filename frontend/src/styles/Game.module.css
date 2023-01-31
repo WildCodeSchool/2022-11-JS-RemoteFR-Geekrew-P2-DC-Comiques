@@ -47,7 +47,6 @@ body {
   background-color: #041c2e;
   border-radius: 0 0 25px 25px;
   color: #d1b9ab;
-  
 }
 
 h1 {
@@ -101,14 +100,13 @@ h1 {
 }
 
 @media screen and (min-width: 760px) {
-  
   .full-content {
     position: relative;
     height: 100vh;
     flex-direction: column;
     justify-content: end;
   }
-  
+
   .main {
     display: grid;
     grid-template-columns: 1fr 1fr 0.5fr;
@@ -120,13 +118,13 @@ h1 {
     border-radius: 25px;
     box-shadow: 0 20px 35px #fffeff;
   }
-  
+
   .card-title {
     grid-column-start: 1;
     grid-column-end: 4;
     font-size: 2.5rem;
   }
-  
+
   .text {
     grid-column-start: 1;
     grid-column-end: 3;
