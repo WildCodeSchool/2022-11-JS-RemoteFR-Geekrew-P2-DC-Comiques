@@ -4,6 +4,7 @@ import axios from "axios";
 import ClassicCard from "../components/ClassicCard";
 import CrashHero from "../components/CrashHero";
 import Logo from "../components/Logo";
+import Pseudo from "../components/Pseudo";
 import PopupGame from "../components/PopupGame";
 
 function Game() {
@@ -40,15 +41,7 @@ function Game() {
   return (
     <div>
       <Logo />
-      {visibility && (
-        <PopupGame
-          visibility={visibility}
-          setVisibility={setVisibility}
-          choices={scenario.choices}
-          popUpText={popUpText}
-        />
-      )}
-      {scenario && type === "scenarioCard" && (
+      {type === "scenarioCard" && (
         <ClassicCard
           setScenario={setScenario}
           setEvent={setEvent}

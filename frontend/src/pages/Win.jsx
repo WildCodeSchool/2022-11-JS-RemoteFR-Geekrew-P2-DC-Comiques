@@ -2,11 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styles from "../styles/Win.module.css";
 import logo from "../assets/LogoGitPushForce.png";
+import Pseudo from "../components/Pseudo";
 
 function Win() {
   return (
     <div className={styles.fond}>
       <img src={logo} alt="Logo de l'application" className={styles.logo} />
+      <Pseudo />
       <div className={styles.block}>
         <div className={styles.text_container}>
           <h1 className={styles.text}>API END</h1>

@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import HomeText from "../components/HomeText";
 import Curtain from "../components/Curtain";
 import data from "../data/homecredits.json";
+import Pseudo from "../components/Pseudo";
 import styles from "../styles/Home.module.css";
 
 function Home() {
@@ -32,6 +33,7 @@ function Home() {
     <div className={styles.home}>
       <Curtain />
       <main className={styles.main}>
+        <Pseudo className="pseudo" />
         <div className={styles["logo-container"]}>
           <img
             className={styles.logo}
