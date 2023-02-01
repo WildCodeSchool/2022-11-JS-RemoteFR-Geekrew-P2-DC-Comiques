@@ -13,7 +13,7 @@ function Win() {
         <div className={styles.text_container}>
           <h1 className={styles.text}>API END</h1>
           <p className={styles.textContent}>
-            Splendide {pseudo}! L’ignominieuse code-erreur détale en voyant la
+            Splendide {pseudo} ! L’ignominieuse code-erreur détale en voyant la
             propreté et la clareté de vos modifications du code-source.
             L’application est sauvée ! Encore une tâche accomplie avec bravoure
             par la git push force !

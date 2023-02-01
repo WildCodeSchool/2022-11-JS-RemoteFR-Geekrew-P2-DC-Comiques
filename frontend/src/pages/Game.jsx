@@ -7,6 +7,8 @@ import Logo from "../components/Logo";
 import PopupGame from "../components/PopupGame";
 import Music from "../components/Music";
 
+const backEndURL = import.meta.env.VITE_BACKEND_URL;
+
 function Game() {
   const [scenarios, setScenarios] = useState([]);
   const [scenario, setScenario] = useState(null);
@@ -17,7 +19,7 @@ function Game() {
   const [pathExpress, setPathExpress] = useState(false);
 
   useEffect(() => {
-    axios.get("http://localhost:8000/scenario_cards").then((res) => {
+    axios.get(`${backEndURL}/scenario_cards`).then((res) => {
       const formatedData = res.data.map((elem) => ({
         ...elem,
         choices: JSON.parse(decodeURIComponent(elem.choices)),
@@ -26,7 +28,7 @@ function Game() {
       setScenario(formatedData.find((obj) => obj.id === "sc001"));
     });
 
-    axios.get("http://localhost:8000/event_cards").then((res) => {
+    axios.get(`${backEndURL}/event_cards`).then((res) => {
       setEvents(res.data);
       setEvent(res.data.find((obj) => obj.id === "ec001"));
     });
