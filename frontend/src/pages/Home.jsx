@@ -5,11 +5,15 @@ import Footer from "../components/Footer";
 import HomeText from "../components/HomeText";
 import Curtain from "../components/Curtain";
 import data from "../data/homecredits.json";
+import Pseudo from "../components/Pseudo";
 import styles from "../styles/Home.module.css";
 
 function Home() {
   const { credits } = data;
   const { welcomeMessage } = data;
+
+  const localPseudo = localStorage.getItem("pseudo") || "Agent 404";
+  const [pseudo, setPseudo] = useState(localPseudo);
 
   const [active, setActive] = useState(false);
 
@@ -31,6 +35,7 @@ function Home() {
   return (
     <div className={styles.home}>
       <Curtain />
+      <Pseudo className="pseudo" pseudo={pseudo} setPseudo={setPseudo} />
       <main className={styles.main}>
         <div className={styles["logo-container"]}>
           <img
@@ -46,6 +51,7 @@ function Home() {
           active={active}
           credits={credits}
           welcomeMessage={welcomeMessage}
+          pseudo={pseudo}
         />
         <div className={styles.buttonsContainer}>
           <HomeButton

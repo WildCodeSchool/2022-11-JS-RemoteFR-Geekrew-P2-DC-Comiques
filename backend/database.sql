@@ -9,7 +9,7 @@ CREATE TABLE `event_card` (
   `text` text NOT NULL,
   `go_to` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 LOCK TABLES `event_card` WRITE;
 
@@ -49,7 +49,7 @@ CREATE TABLE `scenario_card` (
   `text` text NOT NULL,
   `choices` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 LOCK TABLES `scenario_card` WRITE;
 
