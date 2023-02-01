@@ -169,6 +169,7 @@ h1 {
   .choice {
     display: flex;
     flex-direction: column;
+    height: auto;
   }
 
   .button {
@@ -177,5 +178,4 @@ h1 {
     color: rgba(255, 255, 255, 1);
     opacity: 0.8;
   }
-
 }

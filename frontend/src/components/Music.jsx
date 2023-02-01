@@ -11,7 +11,7 @@ function Music() {
   useEffect(() => {
     const audioVol = document.getElementById("music");
     const volumeDown = () => {
-      audioVol.volume = 0.05;
+      audioVol.volume = 0.07;
     };
     return volumeDown();
   }, []);
