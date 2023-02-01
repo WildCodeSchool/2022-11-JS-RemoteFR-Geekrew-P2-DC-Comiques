@@ -3,7 +3,7 @@
   src: local("MerriweatherSans-Light"), url(../Fonts/MerriweatherSans-Light.ttf);
 }
 .pseudo {
-  color: white;
+  color: #ffe8db;
   font-size: 1.5rem;
   font-weight: 600;
   text-align: center;
@@ -15,6 +15,10 @@
   transition: all 0.3s ease-in-out;
   opacity: 0.8;
   position: fixed;
-  z-index: 10;
+  z-index: 100;
   width: 100%;
+}
+
+button {
+  color: #ffe8db;
 }

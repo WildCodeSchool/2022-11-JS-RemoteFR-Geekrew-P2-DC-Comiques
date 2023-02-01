@@ -36,6 +36,7 @@
   padding-bottom: 2rem;
   z-index: 2;
   box-shadow: 0 0 35px #868686;
+  color: #dfcabe;
 }
 
 .button {
@@ -43,11 +44,10 @@
   z-index: 2;
   padding: 10px 20px;
   border: none;
-  color: #d1b9ab;
+  color: #dfcabe;
   border-radius: 7px;
   letter-spacing: 4px;
-  font-size: larger;
-  font-weight: 700;
+  font-weight: 600;
   transition: 0.5s;
   transition-property: box-shadow;
   width: 170px;
@@ -69,8 +69,8 @@
   .button {
     position: fixed;
     height: 80px;
-    top: 80%;
-    left: 80%;
+    bottom: 5%;
+    right: 5%;
     transform: translate(10%, 10%);
     padding: 5px 5px;
     cursor: pointer;

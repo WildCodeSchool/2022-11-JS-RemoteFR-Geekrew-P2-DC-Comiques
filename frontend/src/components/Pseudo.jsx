@@ -18,7 +18,7 @@ function App({ pseudo, setPseudo }) {
       {pseudo}
       <button type="button" onClick={() => setPopupOpen(true)}>
         &nbsp; &nbsp; &nbsp;
-        {isSaved || pseudo ? "Modify Pseudo" : "Enter Pseudo"}
+        {isSaved || pseudo ? "Modifier le pseudo" : "Entrez votre pseudo"}
       </button>
       {isPopupOpen && (
         <div className="popup">
