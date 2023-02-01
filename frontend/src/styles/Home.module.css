@@ -37,8 +37,8 @@
 
 .logo {
   position: absolute;
-  transform: translate(0, -1rem);
-  height: 150%;
+  transform: translate(0, 1.9rem);
+  height: 105%;
   width: auto;
 }
 
@@ -163,7 +163,7 @@
   .home-text {
     grid-column: span 1 / auto;
     margin-bottom: 3rem;
-    font-size: 1.3em;
+    font-size: 1.15em;
   }
 
   .buttonsContainer {
@@ -174,10 +174,13 @@
     align-items: center;
     margin-bottom: 15%;
     margin-top: 10%;
+    margin-left: 20%;
+    max-width: 4rem;
+    min-width: 22rem;
   }
 
   .button-wrap {
-    margin: 4%;
+    margin: 4% 0;
     width: 45%;
     height: 100%;
   }

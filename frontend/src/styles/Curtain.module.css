@@ -7,14 +7,14 @@
   color: floralwhite;
   background-image: url("../assets/na8g2s5j.bmp");
   position: absolute;
-  z-index: 50;
+  z-index: 101;
 }
 
 .buttonOpened {
   animation-duration: 3s;
   animation-name: Slide;
   position: absolute;
-  z-index: 50;
+  z-index: 101;
 }
 
 @keyframes Slide {

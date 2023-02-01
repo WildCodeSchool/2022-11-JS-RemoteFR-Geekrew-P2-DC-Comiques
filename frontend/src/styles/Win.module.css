@@ -32,11 +32,12 @@
   height: 100%;
   margin-bottom: 2rem;
   padding: 10px 20px;
+  color: #dfcabe;
 }
 
 .text {
   height: 40%;
-  color: #d1b9ab;
+  color: #dfcabe;
   font-weight: bold;
 }
 
@@ -51,6 +52,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 25%;
 }
 
 .btnExit {
@@ -59,7 +61,7 @@
   justify-content: center;
   padding: 10px 20px;
   border: none;
-  color: #d1b9ab;
+  color: #dfcabe;
   border-radius: 15px;
   letter-spacing: 4px;
   transition: 0.5s;
@@ -85,5 +87,17 @@
     left: 35%;
     width: 30%;
     height: auto;
+  }
+
+  .text_container {
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .text {
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .btnExit {
+    color: rgba(255, 255, 255, 1);
   }
 }
