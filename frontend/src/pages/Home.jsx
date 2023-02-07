@@ -6,6 +6,7 @@ import HomeText from "../components/HomeText";
 import Curtain from "../components/Curtain";
 import data from "../data/homecredits.json";
 import Pseudo from "../components/Pseudo";
+import logo from "../assets/LogoGitPushForce.png";
 import styles from "../styles/Home.module.css";
 
 function Home() {
@@ -38,11 +39,7 @@ function Home() {
       <Pseudo className="pseudo" pseudo={pseudo} setPseudo={setPseudo} />
       <main className={styles.main}>
         <div className={styles["logo-container"]}>
-          <img
-            className={styles.logo}
-            src="src/assets/LogoGitPushForce.png"
-            alt="Logo"
-          />
+          <img src={logo} alt="Logo de l'application" className={styles.logo} />
         </div>
         <div className={styles["title-container"]}>
           <h1 className={styles.title}>Bienvenue dans la Git Push Force !</h1>
